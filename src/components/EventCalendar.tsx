@@ -233,7 +233,7 @@ export default function EventCalendar({ items, theme = 'dark', feedPath }: Event
                 rel="noopener noreferrer"
                 className="rounded-lg bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-200"
               >
-                Google Calendar
+                Add to my Google Calendar
               </a>
               <button
                 onClick={() => downloadIcs([selected], `${selected.id}.ics`)}

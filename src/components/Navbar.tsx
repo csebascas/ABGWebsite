@@ -97,6 +97,10 @@ export default function Navbar() {
     { href: "/team", label: "Team" },
   ];
 
+  if (session?.user) {
+    navigationItems.push({ href: "/member-calendar", label: "Member Calendar" });
+  }
+
   navigationItems.push(
     { 
       href: "https://www.instagram.com/aibusinessgroup_", 
@@ -329,4 +333,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-} 
+}
