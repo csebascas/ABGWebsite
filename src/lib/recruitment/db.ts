@@ -170,15 +170,15 @@ export async function getUpcomingCycle(): Promise<RecruitmentCycle | null> {
   const client = await getClient();
   try {
     const collection = client.db().collection(CYCLES_COLLECTION);
-    const now = new Date();
-    // Find cycles where portalOpenAt is in the future, sorted by earliest first
-    const cycle = await collection.findOne(
-      { 
-        isActive: false,
-        portalOpenAt: { $gt: now.toISOString() }
-      },
-      { sort: { portalOpenAt: 1 } }
-    );
+    // Older cycles store ISO strings. The admin editor writes BSON dates.
+    const cycle = await collection.aggregate([
+      { $match: { isActive: false } },
+      { $set: { opensAt: { $convert: { input: '$portalOpenAt', to: 'date', onError: null, onNull: null } } } },
+      { $match: { opensAt: { $gt: new Date() } } },
+      { $sort: { opensAt: 1 } },
+      { $limit: 1 },
+      { $unset: 'opensAt' },
+    ]).next();
     return serializeDoc<RecruitmentCycle>(cycle);
   } finally {
     

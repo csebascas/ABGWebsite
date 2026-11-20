@@ -4,36 +4,21 @@
  */
 
 import { NextResponse } from 'next/server';
-import { getActiveCycle, getUpcomingCycle } from '@/lib/recruitment/db';
+import { getActiveCycle, getUpcomingCycle, getEventsByCycle } from '@/lib/recruitment/db';
 
 export async function GET() {
   try {
-    // Get active cycle
-    const cycle = await getActiveCycle();
-    
+    const active = await getActiveCycle();
+    const cycle = active || await getUpcomingCycle();
     if (cycle) {
+      const records = cycle._id ? await getEventsByCycle(cycle._id) : [];
+      const events = records.map(({ title, startAt, endAt, venue, location, eventType }) => ({
+        title, startAt, endAt, venue, location, eventType,
+      }));
       return NextResponse.json({
-        isActive: true,
-        cycleName: cycle.name,
-        portalOpenAt: cycle.portalOpenAt,
-        portalCloseAt: cycle.portalCloseAt,
-        applicationDueAt: cycle.applicationDueAt,
-        portalUrl: '/portal',
-      });
-    }
-
-    // Check for upcoming cycle
-    const upcomingCycle = await getUpcomingCycle();
-    
-    if (upcomingCycle) {
-      return NextResponse.json({
-        isActive: false,
-        isUpcoming: true,
-        cycleName: upcomingCycle.name,
-        portalOpenAt: upcomingCycle.portalOpenAt,
-        portalCloseAt: upcomingCycle.portalCloseAt,
-        applicationDueAt: upcomingCycle.applicationDueAt,
-        portalUrl: '/portal',
+        isActive: Boolean(active), isUpcoming: !active, cycleName: cycle.name,
+        portalOpenAt: cycle.portalOpenAt, portalCloseAt: cycle.portalCloseAt,
+        applicationDueAt: cycle.applicationDueAt, portalUrl: '/portal', events,
       });
     }
 

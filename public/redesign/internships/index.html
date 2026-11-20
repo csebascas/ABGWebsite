@@ -4,6 +4,7 @@
 <script>window.__resources = {"https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "/redesign/assets/d949f1c3687aedad.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "/redesign/assets/35f4f974f4b2bcd4.js"}</script>
 <meta charset="utf-8">
 <title>Internships · AIBG</title>
+<script src="/redesign/assets/recruitment.js"></script>
 <script src="/redesign/assets/00a6121902a91ff4.js"></script>
 </head>
 <body>
@@ -597,7 +598,7 @@ a{color:inherit;text-decoration:none}
 <a href="/projects/" class="lk">Projects</a>
 <a href="/internships/" class="lk on" aria-current="page">Internships</a>
 <a href="/events/" class="lk">Events</a>
-<a href="/#people" class="lk">People</a>
+
 <a href="mailto:ABGPartnerships@umich.edu" class="lk">Partner with us</a>
 <button type="button" class="menub" sc-camel-on-click="{{ openMenu }}" aria-expanded="{{ menuExp }}" aria-controls="menu-sheet">Menu</button>
 <button type="button" class="bn" data-cursor="dark" sc-camel-on-click="{{ openApply }}" aria-label="{{ applyLabel.cur }}"><span class="rt"><span class="rt-in {{ applyLabel.anim }}"><span aria-hidden="true">{{ applyLabel.prev }}</span><span>{{ applyLabel.cur }}</span></span></span></button>
@@ -614,7 +615,7 @@ a{color:inherit;text-decoration:none}
 <a href="/projects/">Projects</a>
 <a href="/internships/" class="on" aria-current="page">Internships</a>
 <a href="/events/">Events</a>
-<a href="/#people">People</a>
+
 <a href="mailto:ABGPartnerships@umich.edu">Partner with us</a>
 </nav>
 <button type="button" class="bp" data-cursor="dark" sc-camel-on-click="{{ openApplyM }}"><span class="bp-l">{{ applyLabel.cur }}</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
@@ -954,11 +955,11 @@ a{color:inherit;text-decoration:none}
 <div class="fgrid">
 <div class="fl"><a href="/" aria-label="AI Business Group home"><img src="/redesign/assets/aibg-logo.png" alt="AIBG, AI Business Group"></a><p>AI Business Group at the University of Michigan.</p></div>
 <div class="fc"><p class="lbl">Contact</p><a href="mailto:ABGContact@umich.edu" class="tl">ABGContact@umich.edu</a><a href="mailto:ABGPartnerships@umich.edu" class="tl">ABGPartnerships@umich.edu</a><a href="mailto:ABGRecruitment@umich.edu" class="tl">ABGRecruitment@umich.edu</a></div>
-<div class="fc"><p class="lbl">Explore</p><a href="/conference/">Conference</a><a href="/projects/">Projects</a><a href="/internships/">Internships</a><a href="/events/">Events</a><a href="/recruitment/">Recruitment</a></div>
+<div class="fc"><p class="lbl">Explore</p><a href="/conference/">Conference</a><a href="/projects/">Projects</a><a href="/internships/">Internships</a><a href="/events/">Events</a><a href="/recruitment/">Recruitment</a><a href="/team">Team</a><a href="/sxsw">SXSW</a></div>
 <div class="fc"><p class="lbl">Get involved</p><button type="button" class="fbtn" sc-camel-on-click="{{ openApply }}">Apply to AIBG</button><a href="/general-membership/">Become a member</a><a href="/portal/">Applicant portal</a><a href="https://www.instagram.com/aibusinessgroup_/">Instagram</a><a href="https://www.linkedin.com/company/abgumich/">LinkedIn</a></div>
 </div>
 <p class="mark hd" data-rv="1" aria-label="AI Business Group"><sc-for list="{{ markLetters }}" as="t"><span class="lt" aria-hidden="true"><span style="transition-delay: {{ t.d }}ms">{{ t.c }}</span></span></sc-for></p>
-<p class="fine">Est. 2025 · Ann Arbor, Michigan</p>
+<p class="fine">Est. 2025 · Ann Arbor, Michigan · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
 </div>
 </footer>
 
@@ -976,6 +977,7 @@ a{color:inherit;text-decoration:none}
 <sc-if value="{{ ap.canApply }}" hint-placeholder-val="{{ false }}"><a class="bp" data-cursor="dark" href="/portal/"><span class="bp-l">Apply now</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
 <p class="ash-more"><a class="tl" href="/recruitment/">How recruitment works</a></p>
 <sc-if value="{{ ap.notify }}" hint-placeholder-val="{{ true }}">
+<p class="ash-more"><a class="bs" href="/general-membership/">Become a general member</a></p>
 <form class="nf2" ref="{{ setNotify }}" novalidate=""><label class="sr" for="nf2-e">Email address</label><input id="nf2-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">Get notified</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
 <p class="nf2-m" aria-live="polite">{{ nfMsg }}</p>
 </sc-if>
@@ -1103,7 +1105,7 @@ class Component extends DCLogic {
     if (hasIO) { this.ioMorph = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting && !on) { paused += performance.now() - pausedAt; } if (!e.isIntersecting && on) pausedAt = performance.now(); on = e.isIntersecting; })); this.ioMorph.observe(p.ownerSVGElement || p); }
     const tick = (now) => {
       if (on) {
-        const t = ((now - t0 - paused) / 4000) % 3, k = Math.floor(t), f = ease(Math.min(1, (t - k) / 0.6));
+        const t = (Math.max(0, now - t0 - paused) / 4000) % 3, k = Math.floor(t), f = ease(Math.min(1, (t - k) / 0.6));
         const A = F[k], Bp = F[(k + 1) % 3];
         p.setAttribute('d', 'M' + A.map((a, i) => (a[0] + (Bp[i][0] - a[0]) * f).toFixed(1) + ' ' + (a[1] + (Bp[i][1] - a[1]) * f).toFixed(1)).join(' L') + 'Z');
       }
@@ -1170,6 +1172,7 @@ class Component extends DCLogic {
     this.lastY = y;
   }
   componentDidMount() {
+    window.aibgRecruitment.load(this);
     const mm = (q) => (window.matchMedia ? window.matchMedia(q).matches : false);
     const reduce = mm('(prefers-reduced-motion: reduce)');
     this.reduce = reduce;
@@ -1295,14 +1298,14 @@ class Component extends DCLogic {
   // PROTOTYPE = true shows the panel on the canvas; set it to false to ship,
   // and the panel then only appears with ?preview in the URL.
   // ---------------------------------------------------------------------------
-  status() { return {"recruitment": {"state": "closed", "opensAt": "2027-01-12T09:00:00-05:00", "closesAt": "2027-01-30T23:59:00-05:00", "applyUrl": "/portal/", "infoSessions": [{"date": "Thu, Jan 14 · 7:00 PM", "location": "Ross School of Business"}, {"date": "Tue, Jan 19 · 7:00 PM", "location": "Ross School of Business"}], "cycle": "Winter 2027", "timeline": [{"k": "info", "label": "Info sessions", "date": "Jan 14 and 19", "start": "2027-01-14T19:00:00-05:00", "end": "2027-01-19T20:00:00-05:00"}, {"k": "chats", "label": "Coffee chats", "date": "Jan 20 to 29", "start": "2027-01-20T09:00:00-05:00", "end": "2027-01-29T18:00:00-05:00", "optional": true}, {"k": "due", "label": "Application due", "date": "Jan 30", "start": "2027-01-30T23:59:00-05:00", "end": "2027-01-30T23:59:00-05:00"}, {"k": "r1", "label": "Round 1 interviews", "date": "Feb 4 to 6", "start": "2027-02-04T09:00:00-05:00", "end": "2027-02-06T18:00:00-05:00"}, {"k": "r2", "label": "Round 2 interviews", "date": "Feb 10 and 11", "start": "2027-02-10T09:00:00-05:00", "end": "2027-02-11T18:00:00-05:00"}, {"k": "dec", "label": "Decisions", "date": "Feb 14", "start": "2027-02-14T12:00:00-05:00", "end": "2027-02-14T12:00:00-05:00"}], "tracks": [{"key": "business", "label": "Business", "line": "Scope the problem with the partner, size the opportunity and present the recommendation.", "example": "Competitor Feature Tracker, for Clerked"}, {"key": "engineering", "label": "Engineering", "line": "Build the model, the data pipeline and the prototype the partner actually uses.", "example": "AI-Powered Funding Chatbot, for Hitachi Digital Services"}, {"key": "ai_investment_fund", "label": "AI Investment Fund", "line": "Research and run AI-driven investment ideas, from thesis to backtest.", "example": "Prediction Market Signal Analysis, for a financial research firm", "subtracks": [{"key": "strategy", "label": "Strategy"}, {"key": "quant", "label": "Quant"}]}]}, "conference": {"state": "save-the-date", "name": "Michigan AI Business Conference 2027", "date": "October 2027", "location": "Stephen M. Ross School of Business", "ticketsUrl": "#", "price": "TBD"}, "event": {"show": true, "title": "Endpoint Presentations", "summary": "Project teams present what they built, tested and learned this semester.", "date": "2026-12-05T14:30:00-05:00", "location": "Ross School of Business", "note": "RSVP required", "cta": "RSVP", "url": "/events/endpoint-presentations/"}}; }
+  status() { const content = {"recruitment": {"state": "closed", "opensAt": "2027-01-12T09:00:00-05:00", "closesAt": "2027-01-30T23:59:00-05:00", "applyUrl": "/portal/", "infoSessions": [{"date": "Thu, Jan 14 · 7:00 PM", "location": "Ross School of Business"}, {"date": "Tue, Jan 19 · 7:00 PM", "location": "Ross School of Business"}], "cycle": "Winter 2027", "timeline": [{"k": "info", "label": "Info sessions", "date": "Jan 14 and 19", "start": "2027-01-14T19:00:00-05:00", "end": "2027-01-19T20:00:00-05:00"}, {"k": "chats", "label": "Coffee chats", "date": "Jan 20 to 29", "start": "2027-01-20T09:00:00-05:00", "end": "2027-01-29T18:00:00-05:00", "optional": true}, {"k": "due", "label": "Application due", "date": "Jan 30", "start": "2027-01-30T23:59:00-05:00", "end": "2027-01-30T23:59:00-05:00"}, {"k": "r1", "label": "Round 1 interviews", "date": "Feb 4 to 6", "start": "2027-02-04T09:00:00-05:00", "end": "2027-02-06T18:00:00-05:00"}, {"k": "r2", "label": "Round 2 interviews", "date": "Feb 10 and 11", "start": "2027-02-10T09:00:00-05:00", "end": "2027-02-11T18:00:00-05:00"}, {"k": "dec", "label": "Decisions", "date": "Feb 14", "start": "2027-02-14T12:00:00-05:00", "end": "2027-02-14T12:00:00-05:00"}], "tracks": [{"key": "business", "label": "Business", "line": "Scope the problem with the partner, size the opportunity and present the recommendation.", "example": "Competitor Feature Tracker, for Clerked"}, {"key": "engineering", "label": "Engineering", "line": "Build the model, the data pipeline and the prototype the partner actually uses.", "example": "AI-Powered Funding Chatbot, for Hitachi Digital Services"}, {"key": "ai_investment_fund", "label": "AI Investment Fund", "line": "Research and run AI-driven investment ideas, from thesis to backtest.", "example": "Prediction Market Signal Analysis, for a financial research firm", "subtracks": [{"key": "strategy", "label": "Strategy"}, {"key": "quant", "label": "Quant"}]}]}, "conference": {"state": "save-the-date", "name": "Michigan AI Business Conference 2027", "date": "October 2027", "location": "Stephen M. Ross School of Business", "ticketsUrl": "#", "price": "TBD"}, "event": {"show": true, "title": "Endpoint Presentations", "summary": "Project teams present what they built, tested and learned this semester.", "date": "2026-12-05T14:30:00-05:00", "location": "Ross School of Business", "note": "RSVP required", "cta": "RSVP", "url": "/events/endpoint-presentations/"}}; Object.assign(content.recruitment, this.liveCycle || (this.pvAllowed ? {} : {cycle:"",opensAt:null,closesAt:null,timeline:[],infoSessions:[]})); return content; }
   statusInit() {
     const PROTOTYPE = false;
     let q = false;
     try { q = /[?&]preview\b/.test(window.location.search); } catch (e) {}
     this.pvAllowed = PROTOTYPE || q;
     const S = this.status();
-    let st = { r: S.recruitment.state, c: S.conference.state, ev: !!(S.event && S.event.show), tp: 'early', a: 'interview_round1' };
+    let st = { r: S.recruitment.state, c: this.pvAllowed ? S.conference.state : 'off', ev: !!(S.event && S.event.show), tp: 'early', a: 'interview_round1' };
     try { const saved = JSON.parse(sessionStorage.getItem('aibgPreview') || 'null'); if (saved && this.pvAllowed) st = Object.assign(st, saved); } catch (e) {}
     let dis = [];
     try { dis = JSON.parse(localStorage.getItem('aibgBarDismissed') || '[]') || []; } catch (e) {}
@@ -1339,13 +1342,22 @@ class Component extends DCLogic {
       this.els.notify = el;
       if (el && !el._wired) {
         el._wired = true;
-        el.addEventListener('submit', (e) => {
+        el.addEventListener('submit', async (e) => {
           e.preventDefault();
           const inp = el.querySelector('input'), v = inp ? inp.value.trim() : '';
           if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { this.setState({ nfMsg: 'Enter an email address, like you@umich.edu.' }); if (inp) inp.focus(); return; }
-          // TODO: send to the recruitment mailing list.
-          inp.value = '';
-          this.setState({ nfMsg: 'Thanks. We’ll email ' + v + ' when applications open.' });
+          const button = el.querySelector('button');
+          if (button.disabled) return;
+          button.disabled = true;
+          try {
+            await window.aibgRecruitment.subscribe(v);
+            inp.value = '';
+            this.setState({ nfMsg: 'You’re on the AIBG newsletter list.' });
+          } catch {
+            this.setState({ nfMsg: 'Could not save your email. Please try again.' });
+          } finally {
+            button.disabled = false;
+          }
         });
       }
     };
@@ -1385,10 +1397,10 @@ class Component extends DCLogic {
     // Apply sheet
     const hh = Math.floor((left % 86400000) / 3600000), mm = Math.floor((left % 3600000) / 60000);
     const ap = {
-      'closed': { title: 'Applications are closed', body: 'The next round opens in January. Leave your email and we’ll tell you the day it opens.', notify: true },
-      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Come to an info session first, or leave your email and we’ll remind you.', notify: true, sessions: true },
+      'closed': { title: 'Applications are closed', body: 'General membership is open. Join now, or subscribe to the AIBG newsletter for recruitment updates.', notify: true },
+      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Join the newsletter for recruitment updates.', notify: true, sessions: true },
       'open': { title: 'Applications are open', body: 'Apply by ' + closes + '. Coffee chats are optional.', canApply: true, sessions: true },
-      'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + ' at 11:59 PM ET.', canApply: true, countdown: true }
+      'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + '.', canApply: true, countdown: true }
     }[st.r] || {};
     ap.url = R.applyUrl; ap.infoSessions = R.infoSessions;
     ap.d = String(Math.floor(left / 86400000)); ap.h = (hh < 10 ? '0' : '') + hh; ap.m = (mm < 10 ? '0' : '') + mm;

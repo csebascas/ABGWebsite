@@ -1,15 +1,20 @@
 import { getDb } from '@/lib/mongodb';
 import { NextRequest, NextResponse } from 'next/server';
-import { ObjectId } from 'mongodb';
+import { getServerSession } from 'next-auth/next';
+import { isAdmin } from '@/lib/admin';
 
 
 
 // GET - Get all newsletter subscriptions (admin only)
 export async function GET(request: NextRequest) {
   try {
-    
+
     const db = await getDb('abg-website');
-    
+
+    const session = await getServerSession();
+    if (!session?.user?.email || !isAdmin(session.user)) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
     const subscriptions = await db.collection('NewsletterSubscriber')
       .find({ isActive: true })
       .sort({ createdAt: -1 })
@@ -20,7 +25,7 @@ export async function GET(request: NextRequest) {
     console.error('Error fetching newsletter subscriptions:', error);
     return NextResponse.json({ error: 'Failed to fetch subscriptions' }, { status: 500 });
   } finally {
-    
+
   }
 }
 
@@ -33,7 +38,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    
+
     const db = await getDb('abg-website');
 
     // Check if email already exists
@@ -51,14 +56,14 @@ export async function POST(request: NextRequest) {
           unsubscribedAt: null,
           updatedAt: new Date()
         };
-        
+
         await db.collection('NewsletterSubscriber').updateOne(
           { email },
           { $set: updateData }
         );
-        
-        const updated = await db.collection('NewsletterSubscriber').findOne({ email });
-        return NextResponse.json({ message: 'Successfully resubscribed!', subscription: updated });
+
+
+        return NextResponse.json({ message: 'Successfully resubscribed!' });
       }
     }
 
@@ -74,12 +79,12 @@ export async function POST(request: NextRequest) {
 
     await db.collection('NewsletterSubscriber').insertOne(subscription);
 
-    return NextResponse.json({ message: 'Successfully subscribed!', subscription });
+    return NextResponse.json({ message: 'Successfully subscribed!' });
   } catch (error) {
     console.error('Error subscribing to newsletter:', error);
     return NextResponse.json({ error: 'Failed to subscribe' }, { status: 500 });
   } finally {
-    
+
   }
 }
 
@@ -92,7 +97,7 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
-    
+
     const db = await getDb('abg-website');
 
     const updateData = {
@@ -106,13 +111,13 @@ export async function DELETE(request: NextRequest) {
       { $set: updateData }
     );
 
-    const subscription = await db.collection('NewsletterSubscriber').findOne({ email });
 
-    return NextResponse.json({ message: 'Successfully unsubscribed', subscription });
+
+    return NextResponse.json({ message: 'Successfully unsubscribed' });
   } catch (error) {
     console.error('Error unsubscribing from newsletter:', error);
     return NextResponse.json({ error: 'Failed to unsubscribe' }, { status: 500 });
   } finally {
-    
+
   }
-} 
+}

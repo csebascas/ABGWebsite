@@ -77,7 +77,7 @@ const nextConfig = {
   },
   // Rewrite old audio recording URLs to the API route
   async rewrites() {
-    const publicPages = ["/","/conference","/events","/events/endpoint-presentations","/events/recruitment-info-session-jan-14","/events/recruitment-info-session-jan-19","/general-membership","/highlights","/internships","/projects","/recruitment"]
+    const publicPages = ["/","/conference","/events","/general-membership","/highlights","/internships","/projects","/recruitment"]
     return { beforeFiles: publicPages.map(source => ({ source, destination: '/redesign' + (source === '/' ? '' : source) + '/index.html' })), afterFiles: [
       {
         source: '/audioRecordings/:filename*',

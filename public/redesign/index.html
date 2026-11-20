@@ -4,6 +4,7 @@
 <script>window.__resources = {"https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "/redesign/assets/d949f1c3687aedad.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "/redesign/assets/35f4f974f4b2bcd4.js"}</script>
 <meta charset="utf-8">
 <title>AIBG homepage</title>
+<script src="/redesign/assets/recruitment.js"></script>
 <script src="/redesign/assets/00a6121902a91ff4.js"></script>
 </head>
 <body>
@@ -484,7 +485,7 @@ a{color:inherit;text-decoration:none}
 .hact{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
 .hph{position:relative;will-change:transform}
 .frame{aspect-ratio:4/5;max-height:calc(100vh - var(--nav) - 140px);min-height:420px;margin-left:auto;animation:wipeup 1000ms var(--io) 250ms both}
-.evc{position:absolute;left:-40px;bottom:36px;z-index:2;display:flex;gap:16px;width:min(380px,90%);padding:20px;border-radius:12px;background:#0B2E55;border:0;box-sizing:border-box;animation:cardin 500ms var(--e) 1650ms both}
+.evc{position:relative;margin:12px 0 0 auto;z-index:2;display:flex;gap:16px;width:100%;padding:20px;border-radius:12px;background:#0B2E55;border:0;box-sizing:border-box;animation:cardin 500ms var(--e) 1650ms both}
 @keyframes cardin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .evd{flex:none;width:60px;height:66px;border-radius:10px;background:#00274C;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .evm{font-size:13px;line-height:1;color:var(--sec)}
@@ -499,7 +500,7 @@ a{color:inherit;text-decoration:none}
 .grid{position:absolute;inset:8px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;will-change:transform}
 .tile{overflow:hidden;background:#123A63;will-change:transform,opacity}
 .tile img{display:block;width:100%;height:100%;object-fit:cover}
-.tile.c{grid-column:2;grid-row:2}
+.mosaic-focus{position:absolute;object-fit:cover;pointer-events:none;z-index:1}.tile.c{grid-column:2;grid-row:2}
 .wash{position:absolute;inset:0;background:rgba(3,16,31,.84);opacity:0;pointer-events:none;z-index:2}
 .st{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 clamp(24px,5vw,80px);pointer-events:none;opacity:0;visibility:hidden}
 .st h2{margin:0;max-width:1000px;color:#FFFFFF;font-size:80px;line-height:1.02;text-shadow:0 2px 24px rgba(0,0,0,.45)}
@@ -748,7 +749,7 @@ a{color:inherit;text-decoration:none}
 .mbar{border:0;width:100%;font-family:inherit;cursor:pointer}
 .fbtn{display:block;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
 </style>
-<style>.opening-grid{display:grid;grid-template:1fr 1fr / 1fr 1fr;gap:4px}.opening-grid img{min-height:0;min-width:0;animation:tile-in 750ms ease-out both;animation-delay:calc(var(--tile)*100ms)}@keyframes tile-in{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}.hero h1 .m:last-child{color:#ffcb05;text-shadow:0 2px 6px rgba(0,0,0,.22)}@media(prefers-reduced-motion:reduce){.opening-grid,.opening-grid img{animation:none}}</style></helmet>
+</helmet>
 <div class="r {{ curCls }} {{ barCls }}" ref="{{ setRoot }}">
 <div class="prog" aria-hidden="true" ref="{{ setProg }}"></div>
 <header class="nav" ref="{{ setNav }}">
@@ -769,7 +770,7 @@ a{color:inherit;text-decoration:none}
 <a href="/projects/" class="lk">Projects</a>
 <a href="/internships/" class="lk">Internships</a>
 <a href="/events/" class="lk">Events</a>
-<a href="/#people" class="lk">People</a>
+
 <a href="mailto:ABGPartnerships@umich.edu" class="lk">Partner with us</a>
 <button type="button" class="menub" sc-camel-on-click="{{ openMenu }}" aria-expanded="{{ menuExp }}" aria-controls="menu-sheet">Menu</button>
 <button type="button" class="bn" data-cursor="dark" sc-camel-on-click="{{ openApply }}" aria-label="{{ applyLabel.cur }}"><span class="rt"><span class="rt-in {{ applyLabel.anim }}"><span aria-hidden="true">{{ applyLabel.prev }}</span><span>{{ applyLabel.cur }}</span></span></span></button>
@@ -786,7 +787,7 @@ a{color:inherit;text-decoration:none}
 <a href="/projects/">Projects</a>
 <a href="/internships/">Internships</a>
 <a href="/events/">Events</a>
-<a href="/#people">People</a>
+
 <a href="mailto:ABGPartnerships@umich.edu">Partner with us</a>
 </nav>
 <button type="button" class="bp" data-cursor="dark" sc-camel-on-click="{{ openApplyM }}"><span class="bp-l">{{ applyLabel.cur }}</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
@@ -819,7 +820,7 @@ a{color:inherit;text-decoration:none}
 </div>
 <div class="hcr">
 <div class="hph" ref="{{ setHph }}">
-<div class="frame media opening-grid"><img style="--tile:0" src="/redesign/assets/conference-10.webp" alt="Michigan AI Business Conference"><img style="--tile:1" src="/redesign/assets/conference-39.webp" alt=""><img style="--tile:2" src="/redesign/assets/conference-76.webp" alt=""><img style="--tile:3" src="/redesign/assets/conference-115.webp" alt=""></div>
+<div class="frame media"><img src="/redesign/assets/aibg-group.jpeg" alt="AIBG members together on the stairs at Michigan Ross"></div>
 <sc-if value="{{ card.rec }}" hint-placeholder-val="{{ false }}">
 <aside class="evc" aria-label="Recruitment">
 <div class="evd" aria-hidden="true"><span class="evm">{{ card.rm }}</span><span class="evn">{{ card.rd }}</span></div>
@@ -849,9 +850,9 @@ a{color:inherit;text-decoration:none}
 <div class="evt">
 <p class="lbl">Upcoming event</p>
 <h2>{{ ev.title }}</h2>
-<p class="evl">{{ ev.when }}<br>{{ ev.location }} · {{ ev.note }}</p>
+<p class="evl">{{ ev.when }}<br>{{ ev.location }}</p>
 <p class="cd" aria-label="{{ ev.cdLabel }}"><span class="cdu"><b>{{ ev.d }}</b><i>days</i></span><span class="cdu"><b>{{ ev.h }}</b><i>hrs</i></span><span class="cdu"><span class="cdm"><b class="{{ ev.flip }}">{{ ev.m }}</b></span><i>min</i></span></p>
-<a class="evr tl" href="{{ ev.url }}" target="_blank" rel="noopener">{{ ev.cta }} →</a>
+<a class="evr tl" href="{{ ev.url }}">{{ ev.cta }} →</a>
 </div>
 </aside>
 </sc-if>
@@ -862,8 +863,9 @@ a{color:inherit;text-decoration:none}
 
 <section class="stage deep" aria-label="This is AIBG" ref="{{ setStage }}">
 <div class="stage-in" ref="{{ setStageIn }}">
+<img class="mosaic-focus" src="/redesign/assets/b32b3a52f12f9c03.webp" alt="Conference panel at Michigan Ross">
 <div class="grid" ref="{{ setGrid }}">
-<div class="tile c" data-tile="c"><img src="/redesign/assets/b32b3a52f12f9c03.webp" alt="Panelists in armchairs on stage under the closing remarks and networking slide"></div>
+<div class="tile c" data-tile="c"></div>
 <div class="tile" data-tile="1"><img src="/redesign/assets/faba1a5c3f2c8d06.webp" alt="Two AIBG hosts at the front of a full lecture hall"></div>
 <div class="tile" data-tile="1"><img src="/redesign/assets/1d524ad18c315f93.webp" alt="Panelists on stage behind AIBC letters and a maize block M"></div>
 <div class="tile" data-tile="1"><img src="/redesign/assets/528dea2fc82434d6.jpg" alt="AIBG members in front of a block M flag at SXSW"></div>
@@ -1027,7 +1029,7 @@ a{color:inherit;text-decoration:none}
 <li>Workshops and the Michigan AI Business Conference</li>
 </ul>
 <div class="meta">
-<p><b>Time commitment</b><span class="todo">TODO</span></p>
+
 <p><b>Deadline</b><span data-placeholder="true">{{ join.deadline }}</span></p>
 </div>
 <sc-if value="{{ join.open }}" hint-placeholder-val="{{ false }}"><a class="bp dark" href="/portal/"><span class="bp-l"><span class="rt"><span class="rt-in {{ join.cta.anim }}"><span aria-hidden="true">{{ join.cta.prev }}</span><span>{{ join.cta.cur }}</span></span></span></span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
@@ -1061,11 +1063,11 @@ a{color:inherit;text-decoration:none}
 <div class="fgrid">
 <div class="fl"><a href="/" aria-label="AI Business Group home"><img src="/redesign/assets/aibg-logo.png" alt="AIBG, AI Business Group"></a><p>AI Business Group at the University of Michigan.</p></div>
 <div class="fc"><p class="lbl">Contact</p><a href="mailto:ABGContact@umich.edu" class="tl">ABGContact@umich.edu</a><a href="mailto:ABGPartnerships@umich.edu" class="tl">ABGPartnerships@umich.edu</a><a href="mailto:ABGRecruitment@umich.edu" class="tl">ABGRecruitment@umich.edu</a></div>
-<div class="fc"><p class="lbl">Explore</p><a href="/conference/">Conference</a><a href="/projects/">Projects</a><a href="/internships/">Internships</a><a href="/events/">Events</a><a href="/recruitment/">Recruitment</a></div>
+<div class="fc"><p class="lbl">Explore</p><a href="/conference/">Conference</a><a href="/projects/">Projects</a><a href="/internships/">Internships</a><a href="/events/">Events</a><a href="/recruitment/">Recruitment</a><a href="/team">Team</a><a href="/sxsw">SXSW</a></div>
 <div class="fc"><p class="lbl">Get involved</p><button type="button" class="fbtn" sc-camel-on-click="{{ openApply }}">Apply to AIBG</button><a href="/general-membership/">Become a member</a><a href="/portal/">Applicant portal</a><a href="https://www.instagram.com/aibusinessgroup_/">Instagram</a><a href="https://www.linkedin.com/company/abgumich/">LinkedIn</a></div>
 </div>
 <p class="mark hd" data-rv="1" aria-label="AI Business Group"><sc-for list="{{ markLetters }}" as="t"><span class="lt" aria-hidden="true"><span style="transition-delay: {{ t.d }}ms">{{ t.c }}</span></span></sc-for></p>
-<p class="fine">Est. 2025 · Ann Arbor, Michigan</p>
+<p class="fine">Est. 2025 · Ann Arbor, Michigan · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
 </div>
 </footer>
 
@@ -1083,6 +1085,7 @@ a{color:inherit;text-decoration:none}
 <sc-if value="{{ ap.canApply }}" hint-placeholder-val="{{ false }}"><a class="bp" data-cursor="dark" href="/portal/"><span class="bp-l">Apply now</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
 <p class="ash-more"><a class="tl" href="/recruitment/">How recruitment works</a></p>
 <sc-if value="{{ ap.notify }}" hint-placeholder-val="{{ true }}">
+<p class="ash-more"><a class="bs" href="/general-membership/">Become a general member</a></p>
 <form class="nf2" ref="{{ setNotify }}" novalidate=""><label class="sr" for="nf2-e">Email address</label><input id="nf2-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">Get notified</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
 <p class="nf2-m" aria-live="polite">{{ nfMsg }}</p>
 </sc-if>
@@ -1210,7 +1213,7 @@ class Component extends DCLogic {
     if (hasIO) { this.ioMorph = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting && !on) { paused += performance.now() - pausedAt; } if (!e.isIntersecting && on) pausedAt = performance.now(); on = e.isIntersecting; })); this.ioMorph.observe(p.ownerSVGElement || p); }
     const tick = (now) => {
       if (on) {
-        const t = ((now - t0 - paused) / 4000) % 3, k = Math.floor(t), f = ease(Math.min(1, (t - k) / 0.6));
+        const t = (Math.max(0, now - t0 - paused) / 4000) % 3, k = Math.floor(t), f = ease(Math.min(1, (t - k) / 0.6));
         const A = F[k], Bp = F[(k + 1) % 3];
         p.setAttribute('d', 'M' + A.map((a, i) => (a[0] + (Bp[i][0] - a[0]) * f).toFixed(1) + ' ' + (a[1] + (Bp[i][1] - a[1]) * f).toFixed(1)).join(' L') + 'Z');
       }
@@ -1277,6 +1280,8 @@ class Component extends DCLogic {
     this.lastY = y;
   }
   componentDidMount() {
+    window.aibgRecruitment.load(this);
+    window.aibgRecruitment.loadEvents(this);
     const mm = (q) => (window.matchMedia ? window.matchMedia(q).matches : false);
     const reduce = mm('(prefers-reduced-motion: reduce)');
     this.reduce = reduce;
@@ -1402,14 +1407,14 @@ class Component extends DCLogic {
   // PROTOTYPE = true shows the panel on the canvas; set it to false to ship,
   // and the panel then only appears with ?preview in the URL.
   // ---------------------------------------------------------------------------
-  status() { return {"recruitment": {"state": "closed", "opensAt": "2027-01-12T09:00:00-05:00", "closesAt": "2027-01-30T23:59:00-05:00", "applyUrl": "/portal/", "infoSessions": [{"date": "Thu, Jan 14 · 7:00 PM", "location": "Ross School of Business"}, {"date": "Tue, Jan 19 · 7:00 PM", "location": "Ross School of Business"}], "cycle": "Winter 2027", "timeline": [{"k": "info", "label": "Info sessions", "date": "Jan 14 and 19", "start": "2027-01-14T19:00:00-05:00", "end": "2027-01-19T20:00:00-05:00"}, {"k": "chats", "label": "Coffee chats", "date": "Jan 20 to 29", "start": "2027-01-20T09:00:00-05:00", "end": "2027-01-29T18:00:00-05:00", "optional": true}, {"k": "due", "label": "Application due", "date": "Jan 30", "start": "2027-01-30T23:59:00-05:00", "end": "2027-01-30T23:59:00-05:00"}, {"k": "r1", "label": "Round 1 interviews", "date": "Feb 4 to 6", "start": "2027-02-04T09:00:00-05:00", "end": "2027-02-06T18:00:00-05:00"}, {"k": "r2", "label": "Round 2 interviews", "date": "Feb 10 and 11", "start": "2027-02-10T09:00:00-05:00", "end": "2027-02-11T18:00:00-05:00"}, {"k": "dec", "label": "Decisions", "date": "Feb 14", "start": "2027-02-14T12:00:00-05:00", "end": "2027-02-14T12:00:00-05:00"}], "tracks": [{"key": "business", "label": "Business", "line": "Scope the problem with the partner, size the opportunity and present the recommendation.", "example": "Competitor Feature Tracker, for Clerked"}, {"key": "engineering", "label": "Engineering", "line": "Build the model, the data pipeline and the prototype the partner actually uses.", "example": "AI-Powered Funding Chatbot, for Hitachi Digital Services"}, {"key": "ai_investment_fund", "label": "AI Investment Fund", "line": "Research and run AI-driven investment ideas, from thesis to backtest.", "example": "Prediction Market Signal Analysis, for a financial research firm", "subtracks": [{"key": "strategy", "label": "Strategy"}, {"key": "quant", "label": "Quant"}]}]}, "conference": {"state": "save-the-date", "name": "Michigan AI Business Conference 2027", "date": "October 2027", "location": "Stephen M. Ross School of Business", "ticketsUrl": "#", "price": "TBD"}, "event": {"show": true, "title": "Endpoint Presentations", "summary": "Project teams present what they built, tested and learned this semester.", "date": "2026-12-05T14:30:00-05:00", "location": "Ross School of Business", "note": "RSVP required", "cta": "RSVP", "url": "/events/endpoint-presentations/"}}; }
+  status() { const content = {"recruitment": {"state": "closed", "opensAt": "2027-01-12T09:00:00-05:00", "closesAt": "2027-01-30T23:59:00-05:00", "applyUrl": "/portal/", "infoSessions": [{"date": "Thu, Jan 14 · 7:00 PM", "location": "Ross School of Business"}, {"date": "Tue, Jan 19 · 7:00 PM", "location": "Ross School of Business"}], "cycle": "Winter 2027", "timeline": [{"k": "info", "label": "Info sessions", "date": "Jan 14 and 19", "start": "2027-01-14T19:00:00-05:00", "end": "2027-01-19T20:00:00-05:00"}, {"k": "chats", "label": "Coffee chats", "date": "Jan 20 to 29", "start": "2027-01-20T09:00:00-05:00", "end": "2027-01-29T18:00:00-05:00", "optional": true}, {"k": "due", "label": "Application due", "date": "Jan 30", "start": "2027-01-30T23:59:00-05:00", "end": "2027-01-30T23:59:00-05:00"}, {"k": "r1", "label": "Round 1 interviews", "date": "Feb 4 to 6", "start": "2027-02-04T09:00:00-05:00", "end": "2027-02-06T18:00:00-05:00"}, {"k": "r2", "label": "Round 2 interviews", "date": "Feb 10 and 11", "start": "2027-02-10T09:00:00-05:00", "end": "2027-02-11T18:00:00-05:00"}, {"k": "dec", "label": "Decisions", "date": "Feb 14", "start": "2027-02-14T12:00:00-05:00", "end": "2027-02-14T12:00:00-05:00"}], "tracks": [{"key": "business", "label": "Business", "line": "Scope the problem with the partner, size the opportunity and present the recommendation.", "example": "Competitor Feature Tracker, for Clerked"}, {"key": "engineering", "label": "Engineering", "line": "Build the model, the data pipeline and the prototype the partner actually uses.", "example": "AI-Powered Funding Chatbot, for Hitachi Digital Services"}, {"key": "ai_investment_fund", "label": "AI Investment Fund", "line": "Research and run AI-driven investment ideas, from thesis to backtest.", "example": "Prediction Market Signal Analysis, for a financial research firm", "subtracks": [{"key": "strategy", "label": "Strategy"}, {"key": "quant", "label": "Quant"}]}]}, "conference": {"state": "save-the-date", "name": "Michigan AI Business Conference 2027", "date": "October 2027", "location": "Stephen M. Ross School of Business", "ticketsUrl": "#", "price": "TBD"}, "event": {"show": true, "title": "Endpoint Presentations", "summary": "Project teams present what they built, tested and learned this semester.", "date": "2026-12-05T14:30:00-05:00", "location": "Ross School of Business", "note": "RSVP required", "cta": "RSVP", "url": "/events/endpoint-presentations/"}}; Object.assign(content.recruitment, this.liveCycle || (this.pvAllowed ? {} : {cycle:"",opensAt:null,closesAt:null,timeline:[],infoSessions:[]})); return content; }
   statusInit() {
     const PROTOTYPE = false;
     let q = false;
     try { q = /[?&]preview\b/.test(window.location.search); } catch (e) {}
     this.pvAllowed = PROTOTYPE || q;
     const S = this.status();
-    let st = { r: S.recruitment.state, c: S.conference.state, ev: !!(S.event && S.event.show), tp: 'early', a: 'interview_round1' };
+    let st = { r: S.recruitment.state, c: this.pvAllowed ? S.conference.state : 'off', ev: !!(S.event && S.event.show), tp: 'early', a: 'interview_round1' };
     try { const saved = JSON.parse(sessionStorage.getItem('aibgPreview') || 'null'); if (saved && this.pvAllowed) st = Object.assign(st, saved); } catch (e) {}
     let dis = [];
     try { dis = JSON.parse(localStorage.getItem('aibgBarDismissed') || '[]') || []; } catch (e) {}
@@ -1446,13 +1451,22 @@ class Component extends DCLogic {
       this.els.notify = el;
       if (el && !el._wired) {
         el._wired = true;
-        el.addEventListener('submit', (e) => {
+        el.addEventListener('submit', async (e) => {
           e.preventDefault();
           const inp = el.querySelector('input'), v = inp ? inp.value.trim() : '';
           if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { this.setState({ nfMsg: 'Enter an email address, like you@umich.edu.' }); if (inp) inp.focus(); return; }
-          // TODO: send to the recruitment mailing list.
-          inp.value = '';
-          this.setState({ nfMsg: 'Thanks. We’ll email ' + v + ' when applications open.' });
+          const button = el.querySelector('button');
+          if (button.disabled) return;
+          button.disabled = true;
+          try {
+            await window.aibgRecruitment.subscribe(v);
+            inp.value = '';
+            this.setState({ nfMsg: 'You’re on the AIBG newsletter list.' });
+          } catch {
+            this.setState({ nfMsg: 'Could not save your email. Please try again.' });
+          } finally {
+            button.disabled = false;
+          }
         });
       }
     };
@@ -1492,10 +1506,10 @@ class Component extends DCLogic {
     // Apply sheet
     const hh = Math.floor((left % 86400000) / 3600000), mm = Math.floor((left % 3600000) / 60000);
     const ap = {
-      'closed': { title: 'Applications are closed', body: 'The next round opens in January. Leave your email and we’ll tell you the day it opens.', notify: true },
-      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Come to an info session first, or leave your email and we’ll remind you.', notify: true, sessions: true },
+      'closed': { title: 'Applications are closed', body: 'General membership is open. Join now, or subscribe to the AIBG newsletter for recruitment updates.', notify: true },
+      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Join the newsletter for recruitment updates.', notify: true, sessions: true },
       'open': { title: 'Applications are open', body: 'Apply by ' + closes + '. Coffee chats are optional.', canApply: true, sessions: true },
-      'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + ' at 11:59 PM ET.', canApply: true, countdown: true }
+      'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + '.', canApply: true, countdown: true }
     }[st.r] || {};
     ap.url = R.applyUrl; ap.infoSessions = R.infoSessions;
     ap.d = String(Math.floor(left / 86400000)); ap.h = (hh < 10 ? '0' : '') + hh; ap.m = (mm < 10 ? '0' : '') + mm;
@@ -1666,7 +1680,7 @@ class Component extends DCLogic {
     const s = Math.max(inner.offsetWidth / tw, inner.offsetHeight / th) * 1.02;
     const col = (el) => Math.round(el.offsetLeft / (tw + 8)), row = (el) => Math.round(el.offsetTop / (th + 8));
     const cc = col(cEl), cr = row(cEl);
-    this.mz = { cx, cy, dx: vx - cx, dy: vy - cy, s, tiles: tiles.map((el) => ({ el, center: el === cEl, d: Math.max(Math.abs(col(el) - cc), Math.abs(row(el) - cr)) })) };
+    this.mz = { focus: inner.querySelector(".mosaic-focus"), tw, th, cx, cy, dx: vx - cx, dy: vy - cy, s, tiles: tiles.map((el) => ({ el, center: el === cEl, d: Math.max(Math.abs(col(el) - cc), Math.abs(row(el) - cr)) })) };
   }
   pageMeasure() { this.measureMosaic(); }
   showStatement() {
@@ -1702,6 +1716,12 @@ class Component extends DCLogic {
     const t = c(p / 0.6);
     const z = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     const k = 1 - z;
+    const scale = 1 + (m.s - 1) * k;
+    const width = m.tw * scale, height = m.th * scale;
+    m.focus.style.width = width + 'px';
+    m.focus.style.height = height + 'px';
+    m.focus.style.left = (grid.offsetLeft + m.cx + m.dx * k - width / 2) + 'px';
+    m.focus.style.top = (grid.offsetTop + m.cy + m.dy * k - height / 2) + 'px';
     grid.style.transformOrigin = m.cx + 'px ' + m.cy + 'px';
     grid.style.transform = 'translate(' + (m.dx * k).toFixed(1) + 'px,' + (m.dy * k).toFixed(1) + 'px) scale(' + (1 + (m.s - 1) * k).toFixed(4) + ')';
     m.tiles.forEach((tl) => {
@@ -1763,13 +1783,13 @@ class Component extends DCLogic {
   }
   pageUnmount() { if (this.cdT) clearInterval(this.cdT); }
   pageVals() {
-    const E = this.event, start = new Date(E.date).getTime(), left = start - this.state.now;
+    const E = (this.state.calendar || [])[0] || {}, start = new Date(E.date).getTime(), left = start - this.state.now;
     const two = (n) => (n < 10 ? '0' : '') + n;
     const d = Math.max(0, Math.floor(left / 86400000)), h = Math.max(0, Math.floor((left % 86400000) / 3600000)), mi = Math.max(0, Math.floor((left % 3600000) / 60000));
     const dt = new Date(start);
     const ev = {
       show: false,
-      title: E.title, location: E.location, note: E.note, cta: E.cta, url: E.url,
+      title: E.title, location: E.location, note: E.note, cta: "View event", url: E.url,
       month: 'Dec', day: '5', when: 'Sat, Dec 5 · 2:30 PM ET',
       d: String(d), h: two(h), m: two(mi), flip: this.state.flip,
       cdLabel: 'Starts in ' + d + ' days, ' + h + ' hours and ' + mi + ' minutes'
@@ -1791,14 +1811,14 @@ class Component extends DCLogic {
     const ST = this.sv, st = ST.st, Cf = ST.Cf, R = ST.R;
     const recMode = ['opening-soon', 'open', 'closing-soon'].indexOf(st.r) >= 0;
     const confMode = !recMode && st.c === 'tickets';
-    ev.show = !recMode && !confMode && st.ev && !!E.show && left > 0;
+    ev.show = !recMode && !confMode && st.ev && !!E.date && left > 0;
     const fmt = (iso, o) => { try { return new Intl.DateTimeFormat('en-US', Object.assign({ timeZone: 'America/New_York' }, o)).format(new Date(iso)); } catch (e) { return ''; } };
     const keyIso = st.r === 'opening-soon' ? R.opensAt : R.closesAt;
     const cardTitleTxt = recMode ? ({ 'opening-soon': 'Applications open ' + ST.opens, 'open': 'Applications are open', 'closing-soon': 'Closes in ' + ST.daysTxt })[st.r] : (confMode ? Cf.name : '');
     const card = {
       rec: recMode, conf: confMode, title: this.roll('cardTitle', cardTitleTxt),
       rm: fmt(keyIso, { month: 'short' }), rd: fmt(keyIso, { day: 'numeric' }),
-      recLine: ({ 'opening-soon': 'Applications open ' + ST.opens + ' and close ' + ST.closes + '.', 'open': 'Apply by ' + ST.closes + '.', 'closing-soon': 'The deadline is ' + ST.closes + ' at 11:59 PM ET.' })[st.r] || '',
+      recLine: ({ 'opening-soon': 'Applications open ' + ST.opens + ' and close ' + ST.closes + '.', 'open': 'Apply by ' + ST.closes + '.', 'closing-soon': 'The deadline is ' + ST.closes + '.' })[st.r] || '',
       sessions: R.infoSessions, hasSessions: st.r !== 'closing-soon', recCta: st.r === 'opening-soon' ? 'Get notified' : 'Apply now',
       confLine: Cf.date + ' · ' + Cf.location, price: Cf.price
     };
@@ -1812,7 +1832,7 @@ class Component extends DCLogic {
     const isOpen = st.r === 'open' || st.r === 'closing-soon';
     const join = {
       open: isOpen, notOpen: !isOpen, url: R.applyUrl, deadline: ST.closes + ', 2027',
-      copy: ({ 'closed': 'Applications open in January. Get notified.', 'opening-soon': 'Applications open ' + ST.opens + '. Get notified.', 'open': 'Applications are open until ' + ST.closes + '.', 'closing-soon': 'Applications close in ' + ST.daysTxt + ', on ' + ST.closes + '.' })[st.r],
+      copy: ({ 'closed': 'Join the newsletter for recruitment updates.', 'opening-soon': 'Applications open ' + ST.opens + '. Get notified.', 'open': 'Applications are open until ' + ST.closes + '.', 'closing-soon': 'Applications close in ' + ST.daysTxt + ', on ' + ST.closes + '.' })[st.r],
       cta: this.roll('joinCta', isOpen ? 'Apply now' : 'Get notified')
     };
     const a = this.state.active, sv = {};
