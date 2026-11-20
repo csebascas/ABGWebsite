@@ -6,6 +6,7 @@
 <title>AIBG homepage</title>
 <script src="/redesign/assets/recruitment.js"></script>
 <script src="/redesign/assets/00a6121902a91ff4.js"></script>
+<link rel="stylesheet" href="/redesign/assets/application-panel.css">
 </head>
 <body>
 <x-dc>
@@ -477,6 +478,11 @@ a{color:inherit;text-decoration:none}
 @media (prefers-reduced-motion: reduce){.rs-dot{animation:none}.slp-bar,.slp-bar.up{transition:none}.xp>*,.xp-d{transition:none}}
 
 .hero{position:relative;padding:calc(var(--nav) + 64px) 0 120px}
+.hero-calendar{max-width:500px;margin-top:28px;padding-top:16px;border-top:1px solid var(--bd)}
+.calendar-head,.calendar-event{display:flex;align-items:center;gap:16px}
+.calendar-head{justify-content:space-between}.calendar-head h2{font-size:26px;margin:0}
+.calendar-event{margin-top:12px}.calendar-title{font-weight:700}
+.calendar-event p,.calendar-status{margin:4px 0 0;color:var(--sec);font-size:15px}
 .hg{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center}
 .hcl{grid-column:span 7}
 .hcr{grid-column:8 / span 5}
@@ -817,6 +823,11 @@ a{color:inherit;text-decoration:none}
 <h1 class="hd h1" aria-label="AI Business Group"><span class="m" aria-hidden="true"><span class="li" style="animation-delay: 100ms">AI Business</span></span><span class="m" aria-hidden="true"><span class="li" style="animation-delay: 180ms">Group</span></span></h1>
 <p class="lead fu">Students building applied AI with real companies.</p>
 <div class="hact fu" style="animation-delay: 350ms"><button type="button" class="bp" data-cursor="dark" sc-camel-on-click="{{ openApply }}"><span class="bp-l">Apply to AIBG</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button><a href="/general-membership/" class="bs"><span>Become a member</span></a></div>
+<section class="hero-calendar" aria-labelledby="hero-calendar-title">
+<div class="calendar-head"><h2 class="hd" id="hero-calendar-title">Upcoming events</h2><a class="tl" href="/events/">Full calendar →</a></div>
+<sc-if value="{{ ev.show }}"><div class="calendar-event"><div class="evd" aria-hidden="true"><span class="evm">{{ ev.month }}</span><b class="evn">{{ ev.day }}</b></div><div><a class="calendar-title" href="{{ ev.url }}">{{ ev.title }}</a><p>{{ ev.when }}</p><p>{{ ev.location }}</p></div></div></sc-if>
+<sc-if value="{{ ev.empty }}"><p class="calendar-status">{{ ev.message }}</p></sc-if>
+</section>
 </div>
 <div class="hcr">
 <div class="hph" ref="{{ setHph }}">
@@ -844,18 +855,7 @@ a{color:inherit;text-decoration:none}
 </div>
 </aside>
 </sc-if>
-<sc-if value="{{ ev.show }}" hint-placeholder-val="{{ true }}">
-<aside class="evc" aria-label="Upcoming event">
-<div class="evd" aria-hidden="true"><span class="evm">{{ ev.month }}</span><span class="evn">{{ ev.day }}</span></div>
-<div class="evt">
-<p class="lbl">Upcoming event</p>
-<h2>{{ ev.title }}</h2>
-<p class="evl">{{ ev.when }}<br>{{ ev.location }}</p>
-<p class="cd" aria-label="{{ ev.cdLabel }}"><span class="cdu"><b>{{ ev.d }}</b><i>days</i></span><span class="cdu"><b>{{ ev.h }}</b><i>hrs</i></span><span class="cdu"><span class="cdm"><b class="{{ ev.flip }}">{{ ev.m }}</b></span><i>min</i></span></p>
-<a class="evr tl" href="{{ ev.url }}">{{ ev.cta }} →</a>
-</div>
-</aside>
-</sc-if>
+
 </div>
 </div>
 </div>
@@ -1085,9 +1085,17 @@ a{color:inherit;text-decoration:none}
 <sc-if value="{{ ap.canApply }}" hint-placeholder-val="{{ false }}"><a class="bp" data-cursor="dark" href="/portal/"><span class="bp-l">Apply now</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
 <p class="ash-more"><a class="tl" href="/recruitment/">How recruitment works</a></p>
 <sc-if value="{{ ap.notify }}" hint-placeholder-val="{{ true }}">
-<p class="ash-more"><a class="bs" href="/general-membership/">Become a general member</a></p>
+<section class="application-choice" aria-labelledby="membership-choice">
+<h3 class="hd" id="membership-choice">General membership</h3>
+<p>Open now. Join the club without applying to a project team.</p>
+<a class="bs" href="/general-membership/">Become a general member</a>
+</section>
+<section class="application-choice" aria-labelledby="updates-choice">
+<h3 class="hd" id="updates-choice">Project team updates</h3>
+<p>Get recruitment dates and application news in the AIBG newsletter.</p>
 <form class="nf2" ref="{{ setNotify }}" novalidate=""><label class="sr" for="nf2-e">Email address</label><input id="nf2-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">Get notified</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
 <p class="nf2-m" aria-live="polite">{{ nfMsg }}</p>
+</section>
 </sc-if>
 </aside>
 </div>
@@ -1506,8 +1514,8 @@ class Component extends DCLogic {
     // Apply sheet
     const hh = Math.floor((left % 86400000) / 3600000), mm = Math.floor((left % 3600000) / 60000);
     const ap = {
-      'closed': { title: 'Applications are closed', body: 'General membership is open. Join now, or subscribe to the AIBG newsletter for recruitment updates.', notify: true },
-      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Join the newsletter for recruitment updates.', notify: true, sessions: true },
+      'closed': { title: 'Applications are closed', body: 'Project teams are currently closed to new applicants.', notify: true },
+      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '.', notify: true, sessions: true },
       'open': { title: 'Applications are open', body: 'Apply by ' + closes + '. Coffee chats are optional.', canApply: true, sessions: true },
       'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + '.', canApply: true, countdown: true }
     }[st.r] || {};
@@ -1783,7 +1791,7 @@ class Component extends DCLogic {
   }
   pageUnmount() { if (this.cdT) clearInterval(this.cdT); }
   pageVals() {
-    const E = (this.state.calendar || [])[0] || {}, start = new Date(E.date).getTime(), left = start - this.state.now;
+    const E = (this.state.calendar || []).find(item => Date.parse(item.date) > this.state.now) || {}, start = new Date(E.date).getTime(), left = start - this.state.now;
     const two = (n) => (n < 10 ? '0' : '') + n;
     const d = Math.max(0, Math.floor(left / 86400000)), h = Math.max(0, Math.floor((left % 86400000) / 3600000)), mi = Math.max(0, Math.floor((left % 3600000) / 60000));
     const dt = new Date(start);
@@ -1811,7 +1819,9 @@ class Component extends DCLogic {
     const ST = this.sv, st = ST.st, Cf = ST.Cf, R = ST.R;
     const recMode = ['opening-soon', 'open', 'closing-soon'].indexOf(st.r) >= 0;
     const confMode = !recMode && st.c === 'tickets';
-    ev.show = !recMode && !confMode && st.ev && !!E.date && left > 0;
+    ev.show = !!E.date;
+    ev.empty = !ev.show;
+    ev.message = this.state.calendarMessage || (this.state.calendar ? 'No upcoming events have been posted.' : 'Loading events…');
     const fmt = (iso, o) => { try { return new Intl.DateTimeFormat('en-US', Object.assign({ timeZone: 'America/New_York' }, o)).format(new Date(iso)); } catch (e) { return ''; } };
     const keyIso = st.r === 'opening-soon' ? R.opensAt : R.closesAt;
     const cardTitleTxt = recMode ? ({ 'opening-soon': 'Applications open ' + ST.opens, 'open': 'Applications are open', 'closing-soon': 'Closes in ' + ST.daysTxt })[st.r] : (confMode ? Cf.name : '');

@@ -6,6 +6,7 @@
 <title>Michigan AI Business Conference · AIBG</title>
 <script src="/redesign/assets/recruitment.js"></script>
 <script src="/redesign/assets/00a6121902a91ff4.js"></script>
+<link rel="stylesheet" href="/redesign/assets/application-panel.css">
 </head>
 <body>
 <x-dc>
@@ -843,7 +844,14 @@ a{color:inherit;text-decoration:none}
 <p class="tk-chip">{{ tkp.chip }}</p>
 <h3 class="hd tk-h">{{ tkp.title }}</h3>
 <p class="tk-msg">{{ tkp.msg }}</p>
-<p class="ash-more"><a class="bs" href="/general-membership/">Become a general member</a></p>
+<section class="application-choice" aria-labelledby="membership-choice">
+<h3 class="hd" id="membership-choice">General membership</h3>
+<p>Open now. Join the club without applying to a project team.</p>
+<a class="bs" href="/general-membership/">Become a general member</a>
+</section>
+<section class="application-choice" aria-labelledby="updates-choice">
+<h3 class="hd" id="updates-choice">Project team updates</h3>
+<p>Get recruitment dates and application news in the AIBG newsletter.</p>
 <form class="nf2" ref="{{ setTkNotify }}" novalidate=""><label class="sr" for="tkn-e">Email address</label><input id="tkn-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">{{ tkp.notifyLabel }}</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
 <p class="nf2-m" aria-live="polite">{{ tkNfMsg }}</p>
 </sc-if>
@@ -931,9 +939,17 @@ a{color:inherit;text-decoration:none}
 <sc-if value="{{ ap.canApply }}" hint-placeholder-val="{{ false }}"><a class="bp" data-cursor="dark" href="/portal/"><span class="bp-l">Apply now</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
 <p class="ash-more"><a class="tl" href="/recruitment/">How recruitment works</a></p>
 <sc-if value="{{ ap.notify }}" hint-placeholder-val="{{ true }}">
-<p class="ash-more"><a class="bs" href="/general-membership/">Become a general member</a></p>
+<section class="application-choice" aria-labelledby="membership-choice">
+<h3 class="hd" id="membership-choice">General membership</h3>
+<p>Open now. Join the club without applying to a project team.</p>
+<a class="bs" href="/general-membership/">Become a general member</a>
+</section>
+<section class="application-choice" aria-labelledby="updates-choice">
+<h3 class="hd" id="updates-choice">Project team updates</h3>
+<p>Get recruitment dates and application news in the AIBG newsletter.</p>
 <form class="nf2" ref="{{ setNotify }}" novalidate=""><label class="sr" for="nf2-e">Email address</label><input id="nf2-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">Get notified</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
 <p class="nf2-m" aria-live="polite">{{ nfMsg }}</p>
+</section>
 </sc-if>
 </aside>
 </div>
@@ -1351,8 +1367,8 @@ class Component extends DCLogic {
     // Apply sheet
     const hh = Math.floor((left % 86400000) / 3600000), mm = Math.floor((left % 3600000) / 60000);
     const ap = {
-      'closed': { title: 'Applications are closed', body: 'General membership is open. Join now, or subscribe to the AIBG newsletter for recruitment updates.', notify: true },
-      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Join the newsletter for recruitment updates.', notify: true, sessions: true },
+      'closed': { title: 'Applications are closed', body: 'Project teams are currently closed to new applicants.', notify: true },
+      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '.', notify: true, sessions: true },
       'open': { title: 'Applications are open', body: 'Apply by ' + closes + '. Coffee chats are optional.', canApply: true, sessions: true },
       'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + '.', canApply: true, countdown: true }
     }[st.r] || {};

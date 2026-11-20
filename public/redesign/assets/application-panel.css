@@ -1,0 +1,13 @@
+.ash .application-choice {
+  border-top: 1px solid rgba(255,255,255,.24);
+  margin-top: 24px;
+  padding-top: 20px;
+}
+.ash .application-choice h3 { margin: 0; font-size: 24px; line-height: 1.2; }
+.ash .application-choice p { margin: 8px 0 0; color: #d6dee8; }
+.ash .application-choice .bs, .ash .application-choice .nf2 { margin-top: 14px; }
+.ash .application-choice .nf2-m:empty { display: none; }
+@media (max-width: 420px) {
+  .ash .nf2 { flex-direction: column; }
+  .ash .nf2 input { flex: none; }
+}
