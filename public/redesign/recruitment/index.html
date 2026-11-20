@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources = {"https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "/redesign/assets/d949f1c3687aedad.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "/redesign/assets/35f4f974f4b2bcd4.js"}</script>
+<meta charset="utf-8">
+<title>Recruitment · AIBG</title>
+<script src="/redesign/assets/00a6121902a91ff4.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3nWuYMBYrp0xg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3jWuYMBYrp0xg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/redesign/assets/e3e520cb7468f2ef.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wIaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wsaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wMaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wwaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wAaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wEaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wIaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wsaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wMaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wwaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wAaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wEaZejf5HdF8Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0;background:#041830}
+a{color:inherit;text-decoration:none}
+.r{--n9:#00274C;--n95:#03101F;--n8:#1A2C45;--ink:#EEF1F5;--sec:#BBBBBB;--mz:#FFCB05;--bd:rgba(255,255,255,.08);--nav:76px;--bar:0px;--e:cubic-bezier(.23,1,.32,1);--ex:cubic-bezier(.19,1,.22,1);--io:cubic-bezier(.77,0,.175,1);position:relative;min-height:100vh;background:linear-gradient(160deg,#0E2F57 0%,#00274C 35%,#062043 70%,#041830 100%);background-attachment:scroll;color:var(--ink);font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.r a:focus-visible,.r button:focus-visible,.r input:focus-visible,.r [tabindex]:focus-visible{outline:2px solid var(--mz);outline-offset:3px}
+.w{max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,80px);position:relative;z-index:1}
+.hd{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;letter-spacing:-0.01em;line-height:1.02;text-wrap:balance}
+.h2{margin:0 0 48px;font-size:64px}
+.lbl{margin:0;font-size:15px;line-height:1.5;color:var(--sec)}
+.sec{position:relative;padding:140px 0}
+.alt{}
+.deep{background:#03101F}
+.tl{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;text-decoration-color:rgba(238,241,245,.4);transition:text-decoration-color 150ms ease}
+@media (hover:hover){.tl:hover{text-decoration-color:currentColor}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ph-tag,.todo{display:inline-block;padding:1px 8px;border-radius:6px;background:rgba(255,203,5,.14);color:#FFE07A;font-size:13px;font-weight:600;vertical-align:2px}
+.todo{font-size:15px}
+
+.bp{position:relative;display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 8px 0 24px;border-radius:999px;background:#FFFFFF;color:#00274C;font:600 16px/1 'Source Sans 3',system-ui,sans-serif;white-space:nowrap;border:0;cursor:pointer;box-sizing:border-box;transition:transform 150ms ease}
+.bp-l{display:block;transition:transform 350ms var(--e)}
+.bp-c{position:relative;flex:none;width:36px;height:36px;border-radius:50%;background:#00274C;color:#FFFFFF;overflow:hidden;transition:transform 350ms var(--e)}
+.bp-c svg{position:absolute;left:10px;top:10px;width:16px;height:16px;transition:transform 350ms var(--e)}
+.bp-c svg+svg{transform:translateX(-28px)}
+.bp.dark{background:#00274C;color:#FFFFFF}.bp.dark .bp-c{background:#FFFFFF;color:#00274C}
+.bp.sm{height:40px;gap:10px;padding:0 6px 0 18px;font-size:15px}.bp.sm .bp-c{width:28px;height:28px}.bp.sm .bp-c svg{left:7px;top:7px;width:14px;height:14px}
+@media (hover:hover){.bp:hover .bp-c svg{transform:translateX(28px)}.bp:hover .bp-c svg+svg{transform:none}.bp:hover .bp-l{transform:translateX(-3px)}.bp:hover .bp-c{transform:translateX(3px)}}
+.bp:active,.bs:active{transform:scale(.97)}
+.bs{position:relative;display:inline-flex;align-items:center;height:52px;padding:0 24px;border-radius:999px;border:1px solid rgba(255,255,255,.25);color:#FFFFFF;font:600 16px/1 'Source Sans 3',system-ui,sans-serif;white-space:nowrap;overflow:hidden;isolation:isolate;box-sizing:border-box;cursor:pointer;background:none;transition:border-color 300ms ease,color 300ms var(--e),transform 150ms ease}
+.bs::before{content:"";position:absolute;inset:0;background:#FFFFFF;transform:scaleX(0);transform-origin:0 50%;transition:transform 400ms var(--e);z-index:-1}
+.bs.sm{height:40px;padding:0 18px;font-size:15px}
+@media (hover:hover){.bs:hover{border-color:rgba(255,255,255,.6);color:#00274C}.bs:hover::before{transform:scaleX(1)}}
+.roll{display:inline-flex;align-items:center;overflow:hidden}
+.roll-clip{display:block;height:1.2em;line-height:1.2;overflow:hidden}
+.roll-inner{display:flex;flex-direction:column;transition:transform .4s var(--e)}
+.roll-inner>span{display:block;flex:none;height:1.2em;line-height:1.2;white-space:nowrap}
+@media (hover:hover){.roll:hover .roll-inner{transform:translateY(-1.2em)}}
+.roll:focus-visible .roll-inner{transform:translateY(-1.2em)}
+
+[data-rv]{transition:opacity 800ms ease-out,transform 900ms var(--ex)}
+.rv-up{opacity:0;transform:translateY(24px)}.rv-up.in{opacity:1;transform:none}
+
+.prog{position:fixed;left:0;top:0;right:0;height:2px;background:#EEF1F5;transform-origin:0 50%;transform:scaleX(0);z-index:70}
+.nav{position:fixed;left:0;right:0;top:0;z-index:60;background:#00274C;border-bottom:1px solid transparent;transition:transform 250ms ease-out,border-color 250ms ease}
+.nav.scr{border-bottom-color:var(--bd)}
+.nav.hide{transform:translateY(-100%)}
+.nav .w{height:var(--nav);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo img{display:block;height:36px;width:auto}
+.navr{display:flex;align-items:center;gap:26px;font-size:16px}
+.lk{position:relative;color:#BBBBBB;white-space:nowrap;transition:color 150ms ease}
+.lk::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:#FFFFFF;transform:scaleX(0);transform-origin:0 50%;transition:transform 250ms var(--e)}
+@media (hover:hover){.lk:hover{color:#FFFFFF}}
+.lk.on{color:#FFFFFF}
+.lk.on::after{transform:none}
+@media (hover:hover){.lk:hover::after{transform:none}}
+.bn{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:999px;background:#FFFFFF;color:#00274C;font-weight:600;font-size:15px}
+
+.sh{position:absolute;pointer-events:none;z-index:0}
+.sh svg{display:block;overflow:visible}
+.sh .p{fill:none;stroke:rgba(255,255,255,.10);stroke-width:1;stroke-dasharray:1 1;stroke-dashoffset:0;transition:stroke-dashoffset 900ms var(--io)}
+.js .sh .p{stroke-dashoffset:1}
+.js .sh.drawn .p{stroke-dashoffset:0}
+.sh.top .p{transition-delay:var(--d)}
+
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+
+.m{display:block;overflow:hidden;padding:.12em 0 .2em;margin:-.12em 0 -.2em}
+.li{display:block;animation:rise 700ms var(--ex) both}
+@keyframes rise{from{transform:translateY(120%)}to{transform:none}}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes wipeup{from{clip-path:inset(100% 0 0 0 round 16px)}to{clip-path:inset(0 0 0 0 round 16px)}}
+.fu{animation:fadeup 600ms var(--e) 250ms both}
+.ph1{position:relative;padding:calc(var(--nav) + var(--bar) + 80px) 0 0}
+.ph1 .h1{margin:16px 0 0;font-size:clamp(52px,7.6vw,112px);line-height:.98}
+.ph1 .sub{margin:24px 0 0;max-width:36ch;font-size:21px;line-height:1.5;color:var(--sec)}
+.cact{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
+.media{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.10);background:var(--n8)}
+.media img{display:block;width:100%;height:100%;object-fit:cover}
+.wipe-ld{animation:wipeup 1000ms var(--io) 250ms both}
+@supports (animation-timeline: view()){.wipe-sc{animation:wipesc linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
+@keyframes wipesc{from{clip-path:inset(0 0 100% 0 round 16px)}to{clip-path:inset(0 0 0 0 round 16px)}}
+
+.foot{position:relative;padding:140px 0 0;overflow:hidden}
+.fgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:32px;font-size:16px;line-height:1.6}
+.fgrid p{margin:0}
+.fl{grid-column:span 3}.fl img{display:block;height:40px;width:auto}.fl p{margin-top:16px !important;color:var(--sec);max-width:24ch}
+.fc{grid-column:span 3;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.fc .lbl{margin-bottom:6px}
+.fc a:not(.tl){color:#D6DEE8}
+@media (hover:hover){.fc a:not(.tl):hover{color:#FFFFFF}}
+.mark{margin:96px 0 0;font-size:clamp(48px,14.2vw,206px);line-height:.9;white-space:nowrap;color:#EEF1F5}
+.lt{display:inline-block;overflow:hidden;vertical-align:top;padding:.12em 0 .2em;margin:-.12em 0 -.2em}
+.lt>span{display:inline-block;transform:translateY(130%);transition:transform 900ms var(--ex)}
+.mark.in .lt>span{transform:none}
+.fine{margin:24px 0 0;padding-bottom:40px;font-size:14px;color:#8C9AAD}
+
+.mbar{display:none}
+.dev{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;padding:20px 24px 80px;border-top:1px solid var(--bd);font-size:14px;color:#8C9AAD}
+.dev button{height:34px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:none;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes askin{from{opacity:0;transform:translateY(-8px) scale(.98)}to{opacity:1;transform:none}}
+
+.cur{position:fixed;left:0;top:0;width:0;height:0;z-index:95;pointer-events:none;opacity:0;transition:opacity 200ms ease}
+.cur.on{opacity:1}
+.cur::before{content:"";position:absolute;left:-4px;top:-4px;width:8px;height:8px;border-radius:50%;background:#FFFFFF;box-sizing:border-box;transition:left 220ms ease,top 220ms ease,width 220ms ease,height 220ms ease,background-color 150ms ease,border-color 150ms ease}
+.cur[data-tone="n"]::before{background:#00274C}
+.cur[data-mode="ring"]::before{left:-20px;top:-20px;width:40px;height:40px;background:transparent;border:1.5px solid #FFFFFF}
+.cur[data-mode="ring"][data-tone="n"]::before{border-color:#00274C}
+.cur[data-mode="label"]::before{left:-36px;top:-36px;width:72px;height:72px;background:#FFFFFF}
+.cur::after{content:attr(data-label);position:absolute;left:0;top:0;transform:translate(-50%,-50%);font-size:14px;font-weight:600;color:#00274C;opacity:0;transition:opacity 150ms ease;white-space:nowrap}
+.cur[data-mode="label"]::after{opacity:1}
+.r.curon,.r.curon a,.r.curon button{cursor:none}
+
+@media (max-width:1180px){.navr .lk{display:none}.menub{display:inline-flex !important}}
+@media (max-width:1023px){
+.fl{grid-column:span 12}.fc{grid-column:span 4}
+}
+@media (max-width:767px){
+.sec{padding:96px 0}
+.h2{font-size:40px;margin-bottom:32px}
+.r{font-size:17px}
+.logo img{height:30px}
+.sh{display:none}.sh.k{display:block}
+.ph1{padding-top:calc(var(--nav) + var(--bar) + 40px)}
+.ph1 .h1{font-size:52px}
+.ph1 .sub{font-size:19px}
+.cact{flex-direction:column;align-items:stretch}.cact .bp{justify-content:space-between}.cact .bs{justify-content:center}
+.fc{grid-column:span 12}
+.foot{padding-top:96px}
+.mark{margin-top:64px}
+.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;height:48px;align-items:center;justify-content:center;background:#FFFFFF;color:#00274C;font-size:16px;font-weight:600;transform:translateY(100%);transition:transform 400ms var(--e)}
+.mbar.show{transform:none}
+}
+@media (prefers-reduced-motion: reduce){
+.r *,.r *::before,.r *::after{animation:none !important;transition:none !important}
+.rv-up,.lt>span{opacity:1 !important;transform:none !important}
+}
+
+.sh{will-change:transform}
+.deep{background:#03101F}
+.js [data-stg]{opacity:0;transform:translateY(12px);transition:opacity 400ms ease-out,transform 500ms var(--e),background-color 200ms ease}
+.js [data-stg].in{opacity:1;transform:none}
+.lin{position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(0,39,76,.72);border:1px solid rgba(255,255,255,.28);color:#FFFFFF;box-sizing:border-box;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease}
+.lin svg{width:16px;height:16px}
+@media (hover:hover){.lin:hover{background:#FFFFFF;color:#00274C;border-color:#FFFFFF}}
+.lin:focus-visible{background:#FFFFFF;color:#00274C}
+.av{display:flex;align-items:center;justify-content:center;background:#11375F;color:#EEF1F5;font-family:'Barlow Condensed',sans-serif;font-weight:700}
+.menub{display:none;align-items:center;height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:none;color:#FFFFFF;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.isw{position:fixed;inset:0;z-index:92}
+.isw-bg{position:absolute;inset:0;background:rgba(3,16,31,.7);animation:fade 200ms ease both}
+.isheet{position:absolute;top:0;right:0;bottom:0;width:min(520px,100%);overflow:auto;background:#0B2E55;padding:76px 44px 44px;box-sizing:border-box;animation:sheetR 420ms var(--e) both}
+@keyframes sheetR{from{transform:translateX(100%)}to{transform:none}}
+@keyframes sheetU{from{transform:translateY(100%)}to{transform:none}}
+.isx{position:absolute;top:20px;right:20px;height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:none;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.sb{display:none}
+.sb.on{display:block}
+.sb h2{margin:14px 0 0;font-size:44px;line-height:1}
+.sb .sb-x{margin:22px 0 0;font-size:18px;line-height:1.6;color:#D6DEE8}
+.sb .sb-m{margin:6px 0 0;font-size:15px;color:var(--sec)}
+.msheet nav{display:flex;flex-direction:column;gap:4px;margin-top:8px}
+.msheet nav a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:40px;line-height:1.2;color:#EEF1F5}
+.msheet nav a.on{color:#FFFFFF;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.msheet .bp{margin-top:36px}
+.rm{display:none;margin-top:8px;font-size:15px;font-weight:600;color:#FFFFFF;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;text-decoration-color:rgba(255,255,255,.5)}
+.trunc .rm{display:inline-block}
+@media (max-width:767px){.isheet{top:auto;left:0;width:100%;max-height:86vh;border-radius:16px 16px 0 0;padding:64px 24px 32px;animation-name:sheetU}.msheet{top:0;max-height:none;border-radius:0;animation-name:sheetR}}
+@media (prefers-reduced-motion: reduce){.js .sh .p{stroke-dashoffset:0}.js [data-stg]{opacity:1;transform:none}}
+
+.r.has-bar{--bar:36px}
+.abar{height:var(--bar);overflow:hidden;background:#FFFFFF;color:#00274C}
+.abar .w{height:36px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:14px}
+.abar p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.abar a,.abar .ab-go{flex:none;font:inherit;font-weight:600;color:#00274C;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.ab-x{position:absolute;right:clamp(24px,5vw,80px);top:6px;width:24px;height:24px;border:0;border-radius:50%;background:none;color:#00274C;font:inherit;font-size:18px;line-height:1;cursor:pointer}
+.abar.light .ab-x:hover{background:rgba(0,39,76,.08)}
+.bn{border:0;cursor:pointer;font:inherit;font-weight:600;font-size:15px}
+.rt{position:relative;display:inline-block;max-width:100%;overflow:hidden;vertical-align:bottom}
+.rt-in{display:block}
+.rt-in>span{display:block}
+.rt-in>span:first-child{position:absolute;left:0;top:0;right:0;visibility:hidden}
+.rt-in.ra>span:first-child{visibility:visible;animation:rtOutA 400ms var(--e) both}
+.rt-in.rb>span:first-child{visibility:visible;animation:rtOutB 400ms var(--e) both}
+.rt-in.ra>span:last-child{animation:rtInA 400ms var(--e) both}
+.rt-in.rb>span:last-child{animation:rtInB 400ms var(--e) both}
+@keyframes rtOutA{from{transform:none}to{transform:translateY(-100%)}}
+@keyframes rtOutB{from{transform:none}to{transform:translateY(-100%)}}
+@keyframes rtInA{from{transform:translateY(100%)}to{transform:none}}
+@keyframes rtInB{from{transform:translateY(100%)}to{transform:none}}
+.bn .rt,.abar .rt{white-space:nowrap}
+.evt h2{overflow-wrap:break-word}
+.cur{z-index:120}
+.ash h2{margin:10px 0 0;font-size:44px;line-height:1}
+.ash .ash-p{margin:16px 0 0;font-size:18px;line-height:1.55;color:#D6DEE8}
+.ash ul{margin:24px 0 0;padding:0;list-style:none}
+.ash li{padding:12px 0;border-top:1px solid rgba(255,255,255,.12);font-size:16px}
+.ash li span{display:block;font-size:14px;color:var(--sec)}
+.ash .bp{margin-top:28px}
+.acd{display:flex;gap:18px;margin:20px 0 0}
+.acd b{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:44px;line-height:1;font-variant-numeric:tabular-nums}
+.acd i{font-style:normal;font-size:14px;color:var(--sec);margin-left:4px}
+.nf2{display:flex;gap:10px;margin-top:28px}
+.nf2 input{flex:1;min-width:0;height:48px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(3,16,31,.4);color:#FFFFFF;font:inherit;font-size:16px}
+.nf2 input::placeholder{color:#8C9AAD}
+.nf2 .bp{margin-top:0;height:48px}
+.nf2-m{min-height:1.5em;margin:10px 0 0;font-size:15px;color:var(--sec)}
+.pvw{position:fixed;left:20px;bottom:20px;z-index:96}
+.pvb{height:38px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:#03101F;color:#FFFFFF;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.pvp{position:absolute;left:0;bottom:48px;width:340px;padding:18px;border-radius:12px;background:#0B2E55;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.pvp p{margin:12px 0 6px;font-size:13px;color:var(--sec)}
+.pvp p:first-child{margin-top:0}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{height:30px;padding:0 10px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:none;color:var(--ink);font:inherit;font-size:13px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:#FFFFFF;color:#00274C;border-color:#FFFFFF}
+.pvp .pvn{margin:14px 0 0;font-size:12px;color:#8C9AAD}
+@media (max-width:767px){.abar .w{justify-content:flex-start;padding-right:56px}.abar p{font-size:13px}.pvw{bottom:60px}.pvp{width:calc(100vw - 40px)}}
+@keyframes imgset{from{transform:scale(1.06)}to{transform:none}}
+.wipe-ld img,.frame img{animation:imgset 1000ms var(--io) 250ms both}
+.rvc{transition:clip-path 1000ms var(--io)}
+.rvc img{transition:transform 1000ms var(--io)}
+.js .rvc{clip-path:inset(100% 0 0 0 round 16px)}
+.js .rvc img{transform:scale(1.06)}
+.js .rvc.in{clip-path:inset(0 0 0 0 round 16px)}
+.js .rvc.in img{transform:none}
+@media (prefers-reduced-motion: reduce){.js .rvc{clip-path:none}.js .rvc img{transform:none}}
+
+.isw-bg{background:rgba(0,39,76,.4)}
+.pvb{background:#0B2E55}
+.pvw{z-index:115}
+
+.ash-more{margin:18px 0 0;font-size:15px}
+.pvp{width:380px;max-height:calc(100vh - 120px);overflow:auto}
+.lnk{display:inline-flex;align-items:center;gap:8px;padding:0;border:0;background:none;color:var(--ink);font:inherit;font-size:15px;font-weight:600;cursor:pointer;text-decoration:underline;text-decoration-color:rgba(238,241,245,.4);text-underline-offset:4px}
+.lnk svg{width:16px;height:16px;flex:none}
+@media (hover:hover){.lnk:hover{text-decoration-color:currentColor}}
+.num{font-variant-numeric:tabular-nums}
+/* RSVP morph button */
+.rsvp{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;min-width:44px;padding:0 22px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:none;color:#FFFFFF;font:600 15px/1 'Source Sans 3',system-ui,sans-serif;white-space:nowrap;overflow:hidden;cursor:pointer;box-sizing:border-box;transition:background-color 300ms var(--io),color 300ms var(--io),border-color 300ms var(--io)}
+.rsvp.rs-busy{padding:0 14px}
+.rsvp.rs-going{background:#FFFFFF;color:#00274C;border-color:#FFFFFF}
+.rs-t{animation:fade 250ms ease-out both}
+.rs-ck{display:flex;width:16px;height:16px}
+.rs-ck svg{width:16px;height:16px}
+.rs-ck path{stroke-dasharray:16;stroke-dashoffset:16;animation:draw 300ms var(--e) 120ms forwards}
+.rs-dot{width:8px;height:8px;border-radius:50%;background:currentColor;animation:rsdot 700ms ease-in-out infinite alternate}
+@keyframes rsdot{from{transform:scale(.6);opacity:.5}to{transform:scale(1.15);opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (hover:hover){.rsvp.rs-idle:hover{border-color:#FFFFFF}}
+/* Slot picker */
+.slp{position:relative;overflow:hidden;border-radius:12px;background:#0B2E55;padding:24px 24px 0}
+.slp-days{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.sd{flex:none;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:96px;padding:12px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:none;color:var(--ink);font:inherit;cursor:pointer;text-align:left;transition:background-color 200ms ease,border-color 200ms ease,color 200ms ease}
+.sd span{font-size:13px;color:var(--sec)}
+.sd b{font-size:17px;font-weight:600}
+.sd[aria-pressed="true"]{background:#FFFFFF;border-color:#FFFFFF;color:#00274C}
+.sd[aria-pressed="true"] span{color:#41536B}
+.slp-times{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding-bottom:24px}
+.tpill{height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:none;color:var(--ink);font:inherit;font-size:15px;font-variant-numeric:tabular-nums;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 150ms ease}
+.tpill:active{transform:scale(.97)}
+.tpill[aria-pressed="true"]{background:#FFFFFF;color:#00274C;border-color:#FFFFFF}
+@media (hover:hover){.tpill:hover{border-color:rgba(255,255,255,.6)}}
+.slp-note{margin:-8px 0 0;padding-bottom:24px;font-size:14px;color:var(--sec)}
+.slp-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 -24px;padding:14px 16px 14px 24px;background:#FFFFFF;color:#00274C;transform:translateY(101%);visibility:hidden;max-height:0;transition:transform 400ms var(--ex),max-height 0s linear 400ms,visibility 0s linear 400ms}
+.slp-bar:not(.up){padding-top:0;padding-bottom:0}
+.slp-bar.up{transform:none;visibility:visible;max-height:120px;transition:transform 450ms var(--ex),max-height 0s,visibility 0s}
+.slp-bar p{margin:0;font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+.slp-bar p span{display:block;font-size:13px;font-weight:400;color:#41536B}
+.slp-bar .bp{background:#00274C;color:#FFFFFF}.slp-bar .bp .bp-c{background:#FFFFFF;color:#00274C}
+.slp-sec{flex:none;height:40px;padding:0 18px;border-radius:999px;border:1.5px solid #00274C;background:none;color:#00274C;font:inherit;font-size:15px;font-weight:600;cursor:pointer;transition:background-color 200ms ease,color 200ms ease}
+@media (hover:hover){.slp-sec:hover{background:#00274C;color:#FFFFFF}}
+.slp-done{display:flex;gap:16px;align-items:flex-start;padding-bottom:24px;animation:fadeup 500ms var(--e) both}
+.slp-ck{flex:none;display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#FFFFFF;color:#00274C}
+.slp-ck svg{width:18px;height:18px}
+.slp-ck path{stroke-dasharray:16;stroke-dashoffset:16;animation:draw 300ms var(--e) 150ms forwards}
+.slp-dt{margin:4px 0 0;font-size:18px;font-weight:600;font-variant-numeric:tabular-nums}
+.slp-ds{margin:4px 0 0;font-size:15px;color:var(--sec)}
+.slp-act{display:flex;flex-wrap:wrap;gap:20px;margin:14px 0 0}
+/* Expanding panels (What you get pattern), shared */
+.xp{display:flex;gap:8px}
+.xp>*{position:relative;flex:1 1 0;min-width:0;overflow:hidden;border-radius:12px;outline:none;transition:flex-grow 500ms var(--io)}
+.xp>*:focus-visible{box-shadow:inset 0 0 0 3px var(--mz)}
+.xp-d{display:grid;grid-template-rows:0fr;transition:grid-template-rows 500ms var(--io)}
+.xp-d>div{overflow:hidden}
+.xp-d .xp-in{opacity:0;transform:translateY(8px);transition:opacity 300ms ease-out 150ms,transform 400ms ease-out 150ms}
+.xp>.on{flex-grow:var(--grow,3)}
+.xp>.on .xp-d{grid-template-rows:1fr}
+.xp>.on .xp-in{opacity:1;transform:none}
+.xp:hover>*,.xp:focus-within>*{flex-grow:1}
+.xp:hover>* .xp-d,.xp:focus-within>* .xp-d{grid-template-rows:0fr}
+.xp:hover>* .xp-in,.xp:focus-within>* .xp-in{opacity:0;transform:translateY(8px)}
+.xp>*:hover,.xp>*:focus,.xp>*:focus-within{flex-grow:var(--grow,3)}
+.xp>*:hover .xp-d,.xp>*:focus .xp-d,.xp>*:focus-within .xp-d{grid-template-rows:1fr}
+.xp>*:hover .xp-in,.xp>*:focus .xp-in,.xp>*:focus-within .xp-in{opacity:1;transform:none}
+/* Accordion rows (FAQ pattern) */
+.acc{max-width:880px;border-bottom:1px solid rgba(255,255,255,.12)}
+.acc-i{border-top:1px solid rgba(255,255,255,.12)}
+.acc-i h3{margin:0}
+.acc-b{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;background:none;border:0;cursor:pointer;text-align:left;color:var(--ink);font-size:28px;line-height:1.1}
+.acc-x{flex:none;position:relative;width:18px;height:18px;transition:transform 350ms ease-out}
+.acc-x::before,.acc-x::after{content:"";position:absolute;left:0;top:8px;width:18px;height:2px;background:var(--ink)}
+.acc-x::after{transform:rotate(90deg)}
+.acc-i.open .acc-x{transform:rotate(45deg)}
+.acc-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows 350ms ease-out}
+.acc-i.open .acc-a{grid-template-rows:1fr}
+.acc-a>div{overflow:hidden}
+.acc-a p{margin:0;padding:0 0 26px;max-width:720px;font-size:18px;line-height:1.6;color:var(--sec);opacity:0;transform:translateY(8px);transition:opacity 300ms ease-out,transform 350ms ease-out}
+.acc-i.open .acc-a p{opacity:1;transform:none}
+@media (max-width:767px){.acc-b{font-size:24px}.slp{padding:18px 18px 0}.slp-bar{margin:0 -18px;padding:12px 12px 12px 18px}.xp{flex-direction:column}.xp>*{flex:none !important}}
+@media (prefers-reduced-motion: reduce){.rs-dot{animation:none}.slp-bar,.slp-bar.up{transition:none}.xp>*,.xp-d{transition:none}}
+
+.evh .sub{max-width:44ch}
+.ecs{margin:0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.12)}
+.ec{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr) auto;align-items:center;gap:32px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.ec-date{display:flex;flex-direction:column;align-items:center;justify-content:center;width:88px;height:96px;border-radius:12px;background:#0B2E55;transition:background-color 250ms ease}
+.ec-date span{font-size:15px;color:var(--sec)}
+.ec-date b{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:48px;line-height:1;font-variant-numeric:tabular-nums}
+.ec-kind{margin:0;font-size:15px;color:var(--sec)}
+.ec h3{margin:6px 0 0;font-size:44px;line-height:1}
+.ec-open{position:static}
+.ec-open::after{content:"";position:absolute;inset:0;z-index:0}
+.ec-meta{margin:8px 0 0;font-size:17px;color:#D6DEE8}
+.ec-act{position:relative;z-index:1}
+@media (hover:hover){.ec:hover .ec-date{background:#11375F}.ec:hover h3 a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}}
+.ec-open:focus-visible{outline:none}.ec-open:focus-visible::after{box-shadow:inset 0 0 0 3px var(--mz);border-radius:12px}
+.hid{display:none !important}
+.ev-empty{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center;padding:48px;border-radius:12px;background:#0B2E55}
+.ev-empty h3{margin:0;font-size:44px;line-height:1}
+.ev-empty p{margin:12px 0 0;font-size:18px;line-height:1.5;color:var(--sec);max-width:48ch}
+.arc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:64px}
+.ar1{grid-column:1 / span 8}
+.ar2{grid-column:9 / span 4;align-self:end}
+.ar .media{aspect-ratio:16/10}
+.ar2 .media{aspect-ratio:4/5}
+.ar-t{margin-top:24px}
+.ar-t h3{margin:8px 0 0;font-size:44px;line-height:1}
+.ar1 .ar-t h3{font-size:56px}
+.ar-t p.ar-l{margin:12px 0 0;max-width:52ch;font-size:18px;line-height:1.5;color:#D6DEE8}
+.ar-t .bs{margin-top:20px}
+.sb-x{margin:16px 0 0;font-size:17px;line-height:1.6;color:#D6DEE8}
+.sb-f{margin:24px 0 0;padding:0}
+.sb-f div{padding:12px 0;border-top:1px solid rgba(255,255,255,.12)}
+.sb-f dt{font-size:14px;color:var(--sec)}
+.sb-f dd{margin:2px 0 0;font-size:16px}
+.sb-ph{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:24px}
+.sb-ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.sb-cr{margin:10px 0 0;font-size:14px;color:var(--sec)}
+.sb-more{margin:28px 0 0}
+@media (max-width:767px){
+.ec{grid-template-columns:64px minmax(0,1fr);gap:16px 18px}
+.ec-date{width:64px;height:72px}.ec-date b{font-size:36px}
+.ec h3{font-size:32px}
+.ec-act{grid-column:2}
+.ev-empty{grid-template-columns:1fr;padding:28px}
+.arc{row-gap:48px}.ar1,.ar2{grid-column:1 / -1}
+.ar2 .media{aspect-ratio:16/10}
+.ar1 .ar-t h3,.ar-t h3{font-size:36px}
+}
+
+.rh .sub{max-width:40ch}
+.rh-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end}
+.rh-l{grid-column:1 / span 8}
+.rh-r{grid-column:9 / span 4;justify-self:end;text-align:right}
+.chip{display:inline-flex;align-items:center;gap:10px;height:36px;padding:0 16px;border-radius:999px;background:#0B2E55;font-size:15px;font-weight:600}
+.chip i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.4)}
+.chip.on i{background:var(--mz)}
+.rcd{display:flex;gap:18px;justify-content:flex-end;margin:16px 0 0}
+.rcd b{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
+.rcd i{display:block;font-style:normal;font-size:14px;color:var(--sec)}
+.rh-r .cact{justify-content:flex-end}
+.trks{margin-top:56px;height:min(62vh,540px)}
+.trk{display:block;padding:0;border:0;background:#0B2E55;color:#FFFFFF;font:inherit;text-align:left;cursor:pointer}
+.trk img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 900ms var(--e),filter 500ms var(--io);filter:saturate(.6) brightness(.8)}
+.trk::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72%;background:linear-gradient(to top,rgba(0,39,76,.95),rgba(0,39,76,0))}
+.trk.on img,.trk:hover img,.trk:focus-visible img{filter:none}
+.trk:hover img{transform:scale(1.03)}
+.trk-t{position:absolute;left:32px;right:32px;bottom:32px;z-index:1;display:block}
+.trk-k{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:#D6DEE8}
+.trk-n{display:block;margin-top:6px;font-size:56px;line-height:.92}
+.trk-l{display:block;margin-top:14px;max-width:40ch;font-size:18px;line-height:1.5;color:#E4EAF2}
+.trk-e{display:block;margin-top:10px;font-size:15px;font-weight:600}
+.trk[aria-pressed="true"]{box-shadow:inset 0 0 0 2px #FFFFFF}
+.tl-h{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:72px}
+.tl-h .h2{margin:0}
+.tl-h p{margin:0;font-size:17px;color:var(--sec)}
+.js .tl-blk{opacity:0;transition:opacity 300ms ease-out}
+.js .tl-blk.in{opacity:1}
+.tlw{position:relative;margin:0 60px}
+.ctl{position:relative;margin:0;padding:0;list-style:none;height:200px}
+.tl-track,.tl-fill{position:absolute;left:0;right:0;top:9px;height:2px;border-radius:2px}
+.tl-track{background:rgba(255,255,255,.14)}
+.tl-fill{background:#FFFFFF;transform:scaleX(var(--f,0));transform-origin:0 50%}
+.tn{position:absolute;top:0;left:calc(var(--x) * 100%);width:180px;margin-left:-90px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.tn-dot{width:20px;height:20px;border-radius:50%;box-sizing:border-box;background:#00274C;border:2px solid rgba(255,255,255,.45)}
+.tn[data-opt="true"] .tn-dot{border-style:dashed}
+.tn[data-st="past"] .tn-dot{background:#FFFFFF;border-color:#FFFFFF}
+.tn[data-st="next"] .tn-dot{border-color:var(--mz);box-shadow:0 0 0 4px rgba(255,203,5,.18)}
+.tn-next{position:absolute;top:-30px;font-size:14px;font-weight:600;color:var(--mz);visibility:hidden}
+.tn[data-st="next"] .tn-next{visibility:visible}
+.tn-d{margin-top:22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.tn-l{margin-top:8px;font-size:16px;line-height:1.35;color:#D6DEE8}
+.tn-o{margin-top:6px;padding:1px 8px;border-radius:999px;border:1px dashed rgba(255,255,255,.45);font-size:13px;color:#D6DEE8}
+.tn[data-st="future"] .tn-d{color:#D6DEE8}
+.tl-key{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:40px;font-size:15px;color:var(--sec)}
+.tl-key span{display:inline-flex;align-items:center;gap:8px}
+.tl-key i{width:12px;height:12px;border-radius:50%;box-sizing:border-box;border:2px solid rgba(255,255,255,.45)}
+.tl-key i.p{background:#FFFFFF;border-color:#FFFFFF}.tl-key i.n{border-color:var(--mz)}.tl-key i.o{border-style:dashed}
+.trk-sub{display:block;margin-top:8px;font-size:15px;font-weight:600;color:#E4EAF2}
+.rgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:48px}
+.rg-l{grid-column:1 / span 5}
+.rg-r{grid-column:7 / span 6}
+.rg-l .h2{margin-bottom:20px}
+.rg-l p{margin:0;max-width:40ch;font-size:18px;line-height:1.6;color:#D6DEE8}
+.rcta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;padding:64px;border-radius:12px;background:#FFFFFF;color:#00274C}
+.rcta h2{margin:0;font-size:72px;color:#00274C}
+.rcta p{margin:16px 0 0;font-size:18px;line-height:1.5;color:#41536B;max-width:46ch}
+.rcta .bp{background:#00274C;color:#FFFFFF}.rcta .bp .bp-c{background:#FFFFFF;color:#00274C}
+.rcta .tl{color:#00274C;text-decoration-color:rgba(0,39,76,.4)}
+@media (max-width:1023px){.tlw{margin:0 40px}.tn{width:140px;margin-left:-70px}.tn-d{font-size:24px}}
+@media (max-width:767px){
+.rh-l,.rh-r{grid-column:1 / -1}.rh-r{justify-self:start;text-align:left;margin-top:28px}.rcd,.rh-r .cact{justify-content:flex-start}
+.trks{height:auto}.trk{height:340px}.trk-n{font-size:52px}
+.trk .xp-d{grid-template-rows:1fr !important}.trk .xp-in{opacity:1 !important;transform:none !important}
+.tl-h{margin-bottom:40px}
+.tlw{margin:0}.ctl{height:auto}
+.tl-track,.tl-fill{left:9px;right:auto;top:0;bottom:0;width:2px;height:auto}
+.tl-fill{transform:scaleY(var(--f,0));transform-origin:50% 0}
+.tn{position:relative;left:0;width:auto;margin:0;display:grid;grid-template-columns:20px minmax(0,1fr);column-gap:20px;align-items:start;text-align:left;padding-bottom:44px}
+.tn:last-child{padding-bottom:0}
+.tn-dot{grid-row:1 / span 2}
+.tn-next{position:static;grid-column:2;grid-row:3;margin-top:6px}
+.tn-d{grid-column:2;margin-top:-4px}.tn-l{grid-column:2}
+.rg-l,.rg-r{grid-column:1 / -1}
+.rcta{grid-template-columns:1fr;padding:32px}.rcta h2{font-size:48px}
+}
+@media (prefers-reduced-motion: reduce){.js .tl-blk{opacity:1;transition:none}}
+.mbar{border:0;width:100%;font-family:inherit;cursor:pointer}
+.fbtn{display:block;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+</style>
+</helmet>
+<div class="r {{ curCls }} {{ barCls }}" ref="{{ setRoot }}">
+<div class="prog" aria-hidden="true" ref="{{ setProg }}"></div>
+<header class="nav" ref="{{ setNav }}">
+<sc-if value="{{ bar.on }}" hint-placeholder-val="{{ false }}">
+<div class="abar light" role="region" aria-label="Announcement" data-cursor="dark">
+<div class="w">
+<p><span class="rt"><span class="rt-in {{ barText.anim }}"><span aria-hidden="true">{{ barText.prev }}</span><span>{{ barText.cur }}</span></span></span></p>
+<sc-if value="{{ bar.isApply }}" hint-placeholder-val="{{ true }}"><button type="button" class="ab-go" sc-camel-on-click="{{ openApply }}">{{ bar.link }}</button></sc-if>
+<sc-if value="{{ bar.isLink }}" hint-placeholder-val="{{ false }}"><a href="/conference/">{{ bar.link }}</a></sc-if>
+<button type="button" class="ab-x" sc-camel-on-click="{{ dismissBar }}" aria-label="Dismiss announcement">×</button>
+</div>
+</div>
+</sc-if>
+<div class="w">
+<a href="/" class="logo" aria-label="AI Business Group home"><img src="/redesign/assets/aibg-logo.png" alt="AIBG, AI Business Group"></a>
+<nav class="navr" aria-label="Primary">
+<sc-if value="{{ confNav }}" hint-placeholder-val="{{ false }}"><a href="/conference/" class="lk">Conference</a></sc-if>
+<a href="/projects/" class="lk">Projects</a>
+<a href="/internships/" class="lk">Internships</a>
+<a href="/events/" class="lk">Events</a>
+<a href="/#people" class="lk">People</a>
+<a href="mailto:ABGPartnerships@umich.edu" class="lk">Partner with us</a>
+<button type="button" class="menub" sc-camel-on-click="{{ openMenu }}" aria-expanded="{{ menuExp }}" aria-controls="menu-sheet">Menu</button>
+<button type="button" class="bn" data-cursor="dark" sc-camel-on-click="{{ openApply }}" aria-label="{{ applyLabel.cur }}"><span class="rt"><span class="rt-in {{ applyLabel.anim }}"><span aria-hidden="true">{{ applyLabel.prev }}</span><span>{{ applyLabel.cur }}</span></span></span></button>
+</nav>
+</div>
+</header>
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+<div class="isw">
+<div class="isw-bg" sc-camel-on-click="{{ closeMenu }}"></div>
+<aside id="menu-sheet" class="isheet msheet" role="dialog" aria-modal="true" aria-label="Menu" ref="{{ setMenuBox }}">
+<button type="button" class="isx" sc-camel-on-click="{{ closeMenu }}" ref="{{ setMenuX }}">Close</button>
+<nav aria-label="Menu">
+<sc-if value="{{ confNav }}" hint-placeholder-val="{{ false }}"><a href="/conference/">Conference</a></sc-if>
+<a href="/projects/">Projects</a>
+<a href="/internships/">Internships</a>
+<a href="/events/">Events</a>
+<a href="/#people">People</a>
+<a href="mailto:ABGPartnerships@umich.edu">Partner with us</a>
+</nav>
+<button type="button" class="bp" data-cursor="dark" sc-camel-on-click="{{ openApplyM }}"><span class="bp-l">{{ applyLabel.cur }}</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
+</aside>
+</div>
+</sc-if>
+<section class="ph1 rh" aria-label="Apply to AIBG">
+<div class="sh top k" style="right:-80px;top:120px;--d:0ms" data-py="-40" data-rot="-12" aria-hidden="true"><svg width="220" height="220" sc-camel-view-box="0 0 220 220"><path class="p" sc-camel-path-length="1" d="M110 1 219 110 110 219 1 110Z"></path></svg></div><div class="sh top" style="right:34%;top:180px;--d:120ms" data-py="-65" data-rot="6" aria-hidden="true"><svg width="60" height="60" sc-camel-view-box="0 0 60 60"><circle class="p" sc-camel-path-length="1" cx="30" cy="30" r="29"></circle></svg></div><div class="sh top" style="left:-8px;top:34%;--d:240ms" data-py="-90" data-rot="10" aria-hidden="true"><svg width="36" height="36" sc-camel-view-box="0 0 36 36"><circle class="p" sc-camel-path-length="1" cx="18" cy="18" r="17"></circle><circle class="p" sc-camel-path-length="1" cx="18" cy="18" r="12.2"></circle></svg></div><div class="sh top" style="right:18%;top:360px;--d:360ms" data-py="-115" data-rot="-8" aria-hidden="true"><svg width="58" height="58" sc-camel-view-box="0 0 58 58"><path class="p" sc-camel-path-length="1" d="M29 1 57 50.5 1 50.5Z"></path></svg></div>
+<div class="w">
+<div class="rh-top">
+<div class="rh-l">
+<p class="lbl fu" style="animation-delay: 0ms">{{ cycle }} recruitment</p>
+<h1 class="hd h1" aria-label="Apply to AIBG"><span class="m" aria-hidden="true"><span class="li" style="animation-delay: 100ms">Apply to AIBG</span></span></h1>
+<p class="sub fu">Project teams spend a semester building AI with a real company. Pick a track, come to an info session, then apply. Coffee chats are optional.</p>
+</div>
+<div class="rh-r fu" style="animation-delay: 350ms">
+<p class="chip {{ rchip.cls }}" role="status"><i aria-hidden="true"></i><span><span class="rt"><span class="rt-in {{ rchipText.anim }}"><span aria-hidden="true">{{ rchipText.prev }}</span><span>{{ rchipText.cur }}</span></span></span></span></p>
+<sc-if value="{{ rchip.countdown }}" hint-placeholder-val="{{ false }}"><p class="rcd" aria-label="{{ ap.cdLabel }}"><span><b>{{ ap.d }}</b><i>days</i></span><span><b>{{ ap.h }}</b><i>hrs</i></span><span><b>{{ ap.m }}</b><i>min</i></span></p></sc-if>
+</div>
+</div>
+<div class="xp trks" style="--grow: 2" role="group" aria-label="Pick a track">
+<button type="button" class="trk {{ trk.business }}" aria-pressed="{{ trkP.business }}" sc-camel-on-click="{{ pickTrack.business }}">
+<img src="/redesign/assets/db012a5101d21f3a.webp" alt="A speaker walks between tables while leading a workshop">
+<span class="trk-t"><span class="trk-k">{{ trkTag.business }}</span><span class="hd trk-n">Business</span>
+<span class="xp-d"><span><span class="xp-in"><span class="trk-l" data-placeholder="true">Scope the problem with the partner, size the opportunity and present the recommendation.</span><span class="trk-e" data-placeholder="true">Example: Competitor Feature Tracker, for Clerked</span></span></span></span></span>
+</button>
+<button type="button" class="trk {{ trk.engineering }}" aria-pressed="{{ trkP.engineering }}" sc-camel-on-click="{{ pickTrack.engineering }}">
+<img src="/redesign/assets/b0059650a5114143.jpg" alt="Laptops and monitors at the AIBG livestream desk">
+<span class="trk-t"><span class="trk-k">{{ trkTag.engineering }}</span><span class="hd trk-n">Engineering</span>
+<span class="xp-d"><span><span class="xp-in"><span class="trk-l" data-placeholder="true">Build the model, the data pipeline and the prototype the partner actually uses.</span><span class="trk-e" data-placeholder="true">Example: AI-Powered Funding Chatbot, for Hitachi Digital Services</span></span></span></span></span>
+</button>
+<button type="button" class="trk {{ trk.ai_investment_fund }}" aria-pressed="{{ trkP.ai_investment_fund }}" sc-camel-on-click="{{ pickTrack.ai_investment_fund }}">
+<img src="/redesign/assets/2bb195eeea9deb3e.webp" alt="A panel on AI inside the world’s biggest banks and funds, seen from the back of the room">
+<span class="trk-t"><span class="trk-k">{{ trkTag.ai_investment_fund }}</span><span class="hd trk-n">AI Investment Fund</span><span class="trk-sub">Two sub-tracks: Strategy and Quant</span>
+<span class="xp-d"><span><span class="xp-in"><span class="trk-l" data-placeholder="true">Research and run AI-driven investment ideas, from thesis to backtest.</span><span class="trk-e" data-placeholder="true">Example: Prediction Market Signal Analysis, for a financial research firm</span></span></span></span></span>
+</button>
+</div>
+</div>
+</section>
+
+<section class="sec tl-sec" aria-labelledby="tl-t" style="padding-top: 120px">
+<div class="sh sc k" style="left:-130px;top:18%;--d:0ms" data-py="-50" data-rot="-10" aria-hidden="true"><svg width="190" height="190" sc-camel-view-box="0 0 190 190"><circle class="p" sc-camel-path-length="1" cx="95" cy="95" r="94"></circle></svg></div>
+<div class="w">
+<div class="tl-blk" data-rv="1">
+<div class="tl-h"><h2 class="hd h2" id="tl-t">How the {{ cycle }} cycle works</h2><p>{{ tlNote }}</p></div>
+<div class="tlw" style="--f: {{ tlFill }}"><span class="tl-track" aria-hidden="true"></span><span class="tl-fill" aria-hidden="true"></span>
+<ol class="ctl">
+<li class="tn" data-st="{{ tl.s0 }}" style="--x: 0.0000"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Jan 14 and 19</span><span class="tn-l">Info sessions</span><span class="sr">{{ tl.sr0 }}</span></li>
+<li class="tn" data-st="{{ tl.s1 }}" data-opt="true" style="--x: 0.2000" data-placeholder="true"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Jan 20 to 29</span><span class="tn-l">Coffee chats</span><span class="tn-o">Optional</span><span class="sr">{{ tl.sr1 }}</span></li>
+<li class="tn" data-st="{{ tl.s2 }}" style="--x: 0.4000"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Jan 30</span><span class="tn-l">Application due</span><span class="sr">{{ tl.sr2 }}</span></li>
+<li class="tn" data-st="{{ tl.s3 }}" style="--x: 0.6000" data-placeholder="true"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Feb 4 to 6</span><span class="tn-l">Round 1 interviews</span><span class="sr">{{ tl.sr3 }}</span></li>
+<li class="tn" data-st="{{ tl.s4 }}" style="--x: 0.8000" data-placeholder="true"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Feb 10 and 11</span><span class="tn-l">Round 2 interviews</span><span class="sr">{{ tl.sr4 }}</span></li>
+<li class="tn" data-st="{{ tl.s5 }}" style="--x: 1.0000" data-placeholder="true"><span class="tn-dot" aria-hidden="true"></span><span class="tn-next" aria-hidden="true">Next</span><span class="tn-d">Feb 14</span><span class="tn-l">Decisions</span><span class="sr">{{ tl.sr5 }}</span></li>
+</ol></div>
+<p class="tl-key" aria-hidden="true"><span><i class="p"></i>Done</span><span><i class="n"></i>Next</span><span><i></i>Coming up</span><span><i class="o"></i>Optional</span></p>
+</div>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="re-t" style="padding-top: 80px">
+<div class="sh sc" style="left:-30px;bottom:90px;--d:0ms" data-py="-50" data-rot="-6" aria-hidden="true"><svg width="84" height="84" sc-camel-view-box="0 0 84 84"><path class="p" sc-camel-path-length="1" d="M42 1 83 73.1 1 73.1Z"></path></svg></div><div class="sh sc" style="left:-46px;top:38%;--d:0ms" data-py="-70" data-rot="-10" aria-hidden="true"><svg width="90" height="90" sc-camel-view-box="0 0 90 90"><path class="p" sc-camel-path-length="1" d="M45 1 89 45 45 89 1 45Z"></path></svg></div>
+<div class="w">
+<h2 class="hd h2" id="re-t">Recruitment events</h2>
+<ol class="ecs">
+<li class="ec {{ evv.endpoint.cls }}" data-k="endpoint" data-stg="80">
+<div class="ec-date" aria-hidden="true"><span>Dec</span><b>5</b></div>
+<div class="ec-main"><p class="ec-kind">Club event · RSVP required</p>
+<h3 class="hd"><a href="/events/endpoint-presentations/" class="ec-open">Endpoint Presentations</a></h3>
+<p class="ec-meta">Sat, Dec 5 · 2:30 PM · Ross School of Business</p></div>
+<div class="ec-act"><button type="button" class="rsvp {{ evv.endpoint.rv.cls }}" sc-camel-on-click="{{ evv.endpoint.rv.go }}" aria-pressed="{{ evv.endpoint.rv.pressed }}" aria-label="{{ evv.endpoint.rv.aria }}"><sc-if value="{{ evv.endpoint.rv.idle }}" hint-placeholder-val="{{ true }}"><span class="rs-t">RSVP</span></sc-if><sc-if value="{{ evv.endpoint.rv.busy }}" hint-placeholder-val="{{ false }}"><span class="rs-dot" aria-hidden="true"></span></sc-if><sc-if value="{{ evv.endpoint.rv.going }}" hint-placeholder-val="{{ false }}"><span class="rs-t">Going</span><span class="rs-ck"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></sc-if></button></div>
+</li>
+<li class="ec {{ evv.info1.cls }}" data-k="info1" data-stg="80" data-placeholder="true">
+<div class="ec-date" aria-hidden="true"><span>Jan</span><b>14</b></div>
+<div class="ec-main"><p class="ec-kind">Recruitment · Open to every U-M student</p>
+<h3 class="hd"><a href="/events/recruitment-info-session-jan-14/" class="ec-open">Recruitment info session</a></h3>
+<p class="ec-meta">Thu, Jan 14 · 7:00 PM · Ross School of Business</p></div>
+<div class="ec-act"><button type="button" class="rsvp {{ evv.info1.rv.cls }}" sc-camel-on-click="{{ evv.info1.rv.go }}" aria-pressed="{{ evv.info1.rv.pressed }}" aria-label="{{ evv.info1.rv.aria }}"><sc-if value="{{ evv.info1.rv.idle }}" hint-placeholder-val="{{ true }}"><span class="rs-t">RSVP</span></sc-if><sc-if value="{{ evv.info1.rv.busy }}" hint-placeholder-val="{{ false }}"><span class="rs-dot" aria-hidden="true"></span></sc-if><sc-if value="{{ evv.info1.rv.going }}" hint-placeholder-val="{{ false }}"><span class="rs-t">Going</span><span class="rs-ck"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></sc-if></button></div>
+</li>
+<li class="ec {{ evv.info2.cls }}" data-k="info2" data-stg="80" data-placeholder="true">
+<div class="ec-date" aria-hidden="true"><span>Jan</span><b>19</b></div>
+<div class="ec-main"><p class="ec-kind">Recruitment · Open to every U-M student</p>
+<h3 class="hd"><a href="/events/recruitment-info-session-jan-19/" class="ec-open">Recruitment info session</a></h3>
+<p class="ec-meta">Tue, Jan 19 · 7:00 PM · Ross School of Business</p></div>
+<div class="ec-act"><button type="button" class="rsvp {{ evv.info2.rv.cls }}" sc-camel-on-click="{{ evv.info2.rv.go }}" aria-pressed="{{ evv.info2.rv.pressed }}" aria-label="{{ evv.info2.rv.aria }}"><sc-if value="{{ evv.info2.rv.idle }}" hint-placeholder-val="{{ true }}"><span class="rs-t">RSVP</span></sc-if><sc-if value="{{ evv.info2.rv.busy }}" hint-placeholder-val="{{ false }}"><span class="rs-dot" aria-hidden="true"></span></sc-if><sc-if value="{{ evv.info2.rv.going }}" hint-placeholder-val="{{ false }}"><span class="rs-t">Going</span><span class="rs-ck"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></sc-if></button></div>
+</li>
+</ol>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="cc-t" style="padding-top: 40px">
+<div class="sh sc" style="left:-20px;top:100px;--d:0ms" data-py="-50" data-rot="-6" aria-hidden="true"><svg width="48" height="48" sc-camel-view-box="0 0 48 48"><path class="p" sc-camel-path-length="1" d="M24 1 47 24 24 47 1 24Z"></path></svg></div>
+<div class="w rgrid">
+<div class="rg-l">
+<p class="lbl" style="margin-bottom: 12px">Optional</p>
+<h2 class="hd h2" id="cc-t">Meet the team over coffee</h2>
+<p data-placeholder="true">Twenty minutes with a current member, before you apply. It isn’t part of the application and doesn’t count toward it. Ask anything: what a project semester is like, which track fits you, how interviews work.</p>
+</div>
+<div class="rg-r"><div class="slp">
+<sc-if value="{{ chat.picking }}" hint-placeholder-val="{{ true }}">
+<div class="slp-days" role="group" aria-label="Coffee chat: day">
+<sc-for list="{{ chat.days }}" as="d" hint-placeholder-count="4"><button type="button" class="sd" aria-pressed="{{ d.sel }}" sc-camel-on-click="{{ d.go }}"><span>{{ d.dow }}</span><b>{{ d.day }}</b></button></sc-for>
+</div>
+<div class="slp-times" role="group" aria-label="Coffee chat: time">
+<sc-for list="{{ chat.times }}" as="t" hint-placeholder-count="6"><button type="button" class="tpill" aria-pressed="{{ t.sel }}" sc-camel-on-click="{{ t.go }}">{{ t.label }}</button></sc-for>
+</div>
+<p class="slp-note" data-placeholder="true">Times are placeholders until the coffee chat schedule is set.</p>
+<div class="slp-bar {{ chat.barCls }}" aria-live="polite">
+<p><span>Selected</span>{{ chat.barText }}</p>
+<button type="button" class="slp-sec" sc-camel-on-click="{{ chat.confirm }}">{{ chat.confirmLabel }}</button>
+</div>
+</sc-if>
+<sc-if value="{{ chat.booked }}" hint-placeholder-val="{{ false }}">
+<div class="slp-done" role="status"><span class="slp-ck"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><div><p class="slp-dt">Booked: {{ chat.bookedText }}</p><p class="slp-ds">We sent the details to your umich email.</p>
+<p class="slp-act"><button type="button" class="lnk" sc-camel-on-click="{{ chat.ics }}"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"></rect><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>Add to calendar</button><button type="button" class="lnk" sc-camel-on-click="{{ chat.change }}">Change time</button></p></div></div>
+</sc-if>
+</div></div>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="fq-t" style="padding-top: 40px">
+<div class="sh sc" style="right:-150px;top:110px;--d:0ms" data-py="-50" data-rot="12" aria-hidden="true"><svg width="240" height="240" sc-camel-view-box="0 0 240 240"><circle class="p" sc-camel-path-length="1" cx="120" cy="120" r="119"></circle></svg></div><div class="sh sc" style="right:-70px;top:52%;--d:0ms" data-py="-70" data-rot="12" aria-hidden="true"><svg width="120" height="120" sc-camel-view-box="0 0 120 120"><path class="p" sc-camel-path-length="1" d="M60 1 119 60 60 119 1 60Z"></path></svg></div>
+<div class="w">
+<h2 class="hd h2" id="fq-t">Questions from applicants</h2>
+<div class="acc" data-rv="1"><div class="acc-i {{ fq.c0 }}"><h3><button type="button" class="acc-b hd" aria-expanded="{{ fq.e0 }}" aria-controls="fq-a0" sc-camel-on-click="{{ fq.t0 }}"><span>Do I need to know how to code?</span><span class="acc-x" aria-hidden="true"></span></button></h3><div class="acc-a" id="fq-a0"><div><p data-placeholder="true">Not for the Business track. Engineering-track applicants should be comfortable building in Python. <span class="ph-tag">Placeholder</span></p></div></div></div>
+<div class="acc-i {{ fq.c1 }}"><h3><button type="button" class="acc-b hd" aria-expanded="{{ fq.e1 }}" aria-controls="fq-a1" sc-camel-on-click="{{ fq.t1 }}"><span>Can I apply to both tracks?</span><span class="acc-x" aria-hidden="true"></span></button></h3><div class="acc-a" id="fq-a1"><div><p data-placeholder="true">Pick the one you want most. You can mention the other in your short answers. <span class="ph-tag">Placeholder</span></p></div></div></div>
+<div class="acc-i {{ fq.c2 }}"><h3><button type="button" class="acc-b hd" aria-expanded="{{ fq.e2 }}" aria-controls="fq-a2" sc-camel-on-click="{{ fq.t2 }}"><span>What happens at a coffee chat?</span><span class="acc-x" aria-hidden="true"></span></button></h3><div class="acc-a" id="fq-a2"><div><p data-placeholder="true">Twenty minutes with a current member to ask anything about AIBG. It’s optional, and it isn’t an interview. <span class="ph-tag">Placeholder</span></p></div></div></div>
+<div class="acc-i {{ fq.c3 }}"><h3><button type="button" class="acc-b hd" aria-expanded="{{ fq.e3 }}" aria-controls="fq-a3" sc-camel-on-click="{{ fq.t3 }}"><span>What do the two interview rounds look like?</span><span class="acc-x" aria-hidden="true"></span></button></h3><div class="acc-a" id="fq-a3"><div><p data-placeholder="true">Round 1 is a conversation about you and your answers. Round 2 is a short case with two board members. <span class="ph-tag">Placeholder</span></p></div></div></div>
+<div class="acc-i {{ fq.c4 }}"><h3><button type="button" class="acc-b hd" aria-expanded="{{ fq.e4 }}" aria-controls="fq-a4" sc-camel-on-click="{{ fq.t4 }}"><span>I didn’t get in. Can I apply again?</span><span class="acc-x" aria-hidden="true"></span></button></h3><div class="acc-a" id="fq-a4"><div><p data-placeholder="true">Yes, every cycle. In the meantime you can join as a general member, no application needed. <span class="ph-tag">Placeholder</span></p></div></div></div></div>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="go-t" style="padding-top: 40px">
+<div class="sh sc" style="right:-28px;top:30%;--d:0ms" data-py="-50" data-rot="-10" aria-hidden="true"><svg width="72" height="72" sc-camel-view-box="0 0 72 72"><circle class="p" sc-camel-path-length="1" cx="36" cy="36" r="35"></circle><circle class="p" sc-camel-path-length="1" cx="36" cy="36" r="24.5"></circle></svg></div>
+<div class="w">
+<div class="rcta" data-cursor="dark">
+<div><h2 class="hd" id="go-t">{{ cta.title }}</h2><p>{{ cta.body }}</p></div>
+<div><a href="/portal/" class="bp" data-cursor="dark" sc-camel-on-click="{{ goPortal }}"><span class="bp-l">Start your application</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a><p style="margin: 14px 0 0; font-size: 15px"><a class="tl" href="mailto:ABGRecruitment@umich.edu">ABGRecruitment@umich.edu</a></p></div>
+</div>
+</div>
+</section>
+<footer class="foot" ref="{{ setFoot }}">
+<div class="sh sc" style="right:8%;top:70px;--d:0ms" data-py="-60" data-rot="-10" aria-hidden="true"><svg width="100" height="100" sc-camel-view-box="0 0 100 100"><path class="p" sc-camel-path-length="1" d="M50 1 99 87.0 1 87.0Z"></path></svg></div>
+<div class="w">
+<div class="fgrid">
+<div class="fl"><a href="/" aria-label="AI Business Group home"><img src="/redesign/assets/aibg-logo.png" alt="AIBG, AI Business Group"></a><p>AI Business Group at the University of Michigan.</p></div>
+<div class="fc"><p class="lbl">Contact</p><a href="mailto:ABGContact@umich.edu" class="tl">ABGContact@umich.edu</a><a href="mailto:ABGPartnerships@umich.edu" class="tl">ABGPartnerships@umich.edu</a><a href="mailto:ABGRecruitment@umich.edu" class="tl">ABGRecruitment@umich.edu</a></div>
+<div class="fc"><p class="lbl">Explore</p><a href="/conference/">Conference</a><a href="/projects/">Projects</a><a href="/internships/">Internships</a><a href="/events/">Events</a><a href="/recruitment/">Recruitment</a></div>
+<div class="fc"><p class="lbl">Get involved</p><button type="button" class="fbtn" sc-camel-on-click="{{ openApply }}">Apply to AIBG</button><a href="/general-membership/">Become a member</a><a href="/portal/">Applicant portal</a><a href="https://www.instagram.com/aibusinessgroup_/">Instagram</a><a href="https://www.linkedin.com/company/abgumich/">LinkedIn</a></div>
+</div>
+<p class="mark hd" data-rv="1" aria-label="AI Business Group"><sc-for list="{{ markLetters }}" as="t"><span class="lt" aria-hidden="true"><span style="transition-delay: {{ t.d }}ms">{{ t.c }}</span></span></sc-for></p>
+<p class="fine">Est. 2025 · Ann Arbor, Michigan</p>
+</div>
+</footer>
+
+<button type="button" class="mbar" ref="{{ setBar }}" sc-camel-on-click="{{ openApply }}">Apply to AIBG</button>
+<sc-if value="{{ applyOpen }}" hint-placeholder-val="{{ false }}">
+<div class="isw">
+<div class="isw-bg" sc-camel-on-click="{{ closeApply }}"></div>
+<aside class="isheet ash" role="dialog" aria-modal="true" aria-labelledby="ash-t" ref="{{ setApplyBox }}">
+<button type="button" class="isx" sc-camel-on-click="{{ closeApply }}" ref="{{ setApplyX }}">Close</button>
+<p class="lbl">Project team applications</p>
+<h2 class="hd" id="ash-t">{{ ap.title }}</h2>
+<p class="ash-p" data-placeholder="true">{{ ap.body }}</p>
+<sc-if value="{{ ap.countdown }}" hint-placeholder-val="{{ false }}"><p class="acd" aria-label="{{ ap.cdLabel }}"><span><b>{{ ap.d }}</b><i>days</i></span><span><b>{{ ap.h }}</b><i>hrs</i></span><span><b>{{ ap.m }}</b><i>min</i></span></p></sc-if>
+<sc-if value="{{ ap.sessions }}" hint-placeholder-val="{{ false }}"><ul data-placeholder="true"><sc-for list="{{ ap.infoSessions }}" as="s" hint-placeholder-count="2"><li>Info session: {{ s.date }}<span>{{ s.location }}</span></li></sc-for></ul></sc-if>
+<sc-if value="{{ ap.canApply }}" hint-placeholder-val="{{ false }}"><a class="bp" data-cursor="dark" href="/portal/"><span class="bp-l">Apply now</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a></sc-if>
+<p class="ash-more"><a class="tl" href="/recruitment/">How recruitment works</a></p>
+<sc-if value="{{ ap.notify }}" hint-placeholder-val="{{ true }}">
+<form class="nf2" ref="{{ setNotify }}" novalidate=""><label class="sr" for="nf2-e">Email address</label><input id="nf2-e" type="email" autocomplete="email" inputmode="email" placeholder="you@umich.edu"><button type="submit" class="bp" data-cursor="dark"><span class="bp-l">Get notified</span><span class="bp-c"><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M2.5 8h10.5M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></form>
+<p class="nf2-m" aria-live="polite">{{ nfMsg }}</p>
+</sc-if>
+</aside>
+</div>
+</sc-if>
+<sc-if value="{{ pvOn }}" hint-placeholder-val="{{ true }}">
+<div class="pvw">
+<sc-if value="{{ pvOpen }}" hint-placeholder-val="{{ false }}">
+<div class="pvp" role="group" aria-label="Preview states">
+<p>Recruitment</p>
+<div class="seg"><sc-for list="{{ pvR }}" as="o" hint-placeholder-count="4"><button type="button" aria-pressed="{{ o.on }}" sc-camel-on-click="{{ o.go }}">{{ o.label }}</button></sc-for></div>
+<p>Conference</p>
+<div class="seg"><sc-for list="{{ pvC }}" as="o" hint-placeholder-count="6"><button type="button" aria-pressed="{{ o.on }}" sc-camel-on-click="{{ o.go }}">{{ o.label }}</button></sc-for></div>
+<p>Event</p>
+<div class="seg"><button type="button" aria-pressed="{{ pvEvOn }}" sc-camel-on-click="{{ pvEvToggle }}">{{ pvEvLabel }}</button></div>
+<sc-if value="{{ pvTpOn }}" hint-placeholder-val="{{ false }}">
+<p>Ticket phase</p>
+<div class="seg"><sc-for list="{{ pvTp }}" as="o" hint-placeholder-count="2"><button type="button" aria-pressed="{{ o.on }}" sc-camel-on-click="{{ o.go }}">{{ o.label }}</button></sc-for></div>
+</sc-if>
+<sc-if value="{{ pvAOn }}" hint-placeholder-val="{{ false }}">
+<p>Applicant stage (portal)</p>
+<div class="seg"><sc-for list="{{ pvA }}" as="o" hint-placeholder-count="8"><button type="button" aria-pressed="{{ o.on }}" sc-camel-on-click="{{ o.go }}">{{ o.label }}</button></sc-for></div>
+</sc-if>
+<p class="pvn">Selections apply to this browser tab as you move between pages.</p>
+</div>
+</sc-if>
+<button type="button" class="pvb" sc-camel-on-click="{{ pvToggle }}" aria-expanded="{{ pvExp }}">Preview states</button>
+</div>
+</sc-if>
+<div class="cur" aria-hidden="true" ref="{{ setCursor }}"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:5200}}">
+class Component extends DCLogic {
+
+  constructor(props) {
+    super(props);
+    this.state = Object.assign({ cursorOn: false, menuOpen: false, sheet: '' }, this.statusInit(), this.initState());
+    this.els = {};
+    const set = (k) => (el) => { this.els[k] = el; };
+    this.refList = ['Root', 'Prog', 'Nav', 'Foot', 'Bar', 'Cursor', 'MenuBox', 'Sheet', 'ApplyBox'].concat(this.refNames());
+    this.refList.forEach((k) => { this['set' + k] = set(k.charAt(0).toLowerCase() + k.slice(1)); });
+    const focusRef = (key) => (el) => { this.els[key] = el; if (el) setTimeout(() => { try { el.focus(); } catch (e) {} }, 30); };
+    this.setMenuX = focusRef('menuX');
+    this.setSheetX = focusRef('sheetX');
+    this.lastY = 0; this.lastT = 0;
+    this.openMenu = () => { this.menuFrom = document.activeElement; this.setState({ menuOpen: true }); };
+    this.closeMenu = () => { this.setState({ menuOpen: false }); this.refocus(this.menuFrom); };
+    this.openSheet = (k, from) => { this.sheetFrom = from || document.activeElement; this.setState({ sheet: k }); };
+    this.closeSheet = () => { this.setState({ sheet: '' }); this.refocus(this.sheetFrom); };
+    this.statusWire();
+    if (this.pageInit) this.pageInit();
+  }
+  refocus(el) { setTimeout(() => { try { if (el && el.focus) el.focus(); } catch (e) {} }, 0); }
+  initState() { return {}; }
+  refNames() { return []; }
+  // Shapes: draw in when a section enters, draw out when it leaves upward; parallax, scroll velocity, cursor drift.
+  initShapes(root, hasIO) {
+    const mob = () => window.innerWidth < 768;
+    this.shapes = root ? Array.from(root.querySelectorAll('.sh')) : [];
+    this.shapes.forEach((s) => { s._ox = 0; s._oy = 0; s._py = 0; s._p = 0; s._vis = true; });
+    if (this.reduce || !hasIO) { this.shapes.forEach((s) => s.classList.add('drawn')); return; }
+    this.shTimer = setTimeout(() => this.shapes.forEach((s) => { if (s.classList.contains('top')) s.classList.add('drawn'); }), 350);
+    const hosts = this.shapes.filter((s) => !s.classList.contains('top')).map((s) => s.parentElement).filter((h, i, a) => h && a.indexOf(h) === i);
+    this.ioSh = new IntersectionObserver((es) => es.forEach((e) => {
+      const sh = Array.from(e.target.children).filter((c) => c.classList && c.classList.contains('sh'));
+      if (e.isIntersecting) sh.forEach((s) => s.classList.add('drawn'));
+      else if (e.boundingClientRect.top > 0 && !mob()) sh.forEach((s) => s.classList.remove('drawn'));
+    }), { threshold: 0.12 });
+    hosts.forEach((h) => this.ioSh.observe(h));
+    this.ioVis = new IntersectionObserver((es) => es.forEach((e) => { e.target._vis = e.isIntersecting; }), { rootMargin: '120px' });
+    this.shapes.forEach((s) => this.ioVis.observe(s));
+    this.ptrX = -9999; this.ptrY = -9999;
+    if (window.matchMedia && window.matchMedia('(hover: hover)').matches) {
+      this.onPtr = (e) => { this.ptrX = e.clientX; this.ptrY = e.clientY; };
+      window.addEventListener('pointermove', this.onPtr, { passive: true });
+    }
+    this.velT = 0; this.velC = 0;
+    const loop = () => {
+      const m = mob();
+      this.velT *= 0.9;
+      this.velC += (this.velT - this.velC) * 0.08;
+      this.shapes.forEach((s) => {
+        if (!s._vis) return;
+        let tx = 0, ty = 0;
+        if (!m && this.ptrX > -9000) {
+          const b = s.getBoundingClientRect();
+          const cx = b.left + b.width / 2 - s._ox, cy = b.top + b.height / 2 - s._oy;
+          const dx = cx - this.ptrX, dy = cy - this.ptrY, d = Math.sqrt(dx * dx + dy * dy) || 1;
+          const dist = Math.max(0, d - b.width / 2);
+          if (dist < 200) { const k = 12 * (1 - dist / 200); tx = (dx / d) * k; ty = (dy / d) * k; }
+        }
+        s._ox += (tx - s._ox) * 0.1; s._oy += (ty - s._oy) * 0.1;
+        const rot = m ? 0 : s._p * (+s.dataset.rot || 0) + this.velC;
+        const py = m ? 0 : s._py;
+        s.style.transform = 'translate3d(' + s._ox.toFixed(2) + 'px,' + (py + s._oy).toFixed(2) + 'px,0) rotate(' + rot.toFixed(2) + 'deg)';
+      });
+      this.rafSh = requestAnimationFrame(loop);
+    };
+    this.rafSh = requestAnimationFrame(loop);
+  }
+  initMorph(root, hasIO) {
+    const p = root && root.querySelector('.mp');
+    if (!p || this.reduce) return;
+    const S = +p.dataset.s || 110, h = S / 2, r = h - 1, N = 72;
+    const circle = [];
+    for (let i = 0; i < N; i++) { const a = -Math.PI / 2 + (2 * Math.PI * i) / N; circle.push([h + r * Math.cos(a), h + r * Math.sin(a)]); }
+    const poly = (V) => {
+      const segs = V.map((v, i) => { const w = V[(i + 1) % V.length]; return { v, w, l: Math.hypot(w[0] - v[0], w[1] - v[1]) }; });
+      const tot = segs.reduce((a, g) => a + g.l, 0), out = [];
+      for (let i = 0; i < N; i++) {
+        let t = (tot * i) / N, k = 0;
+        while (t > segs[k].l) { t -= segs[k].l; k += 1; }
+        const g = segs[k], f = t / g.l;
+        out.push([g.v[0] + (g.w[0] - g.v[0]) * f, g.v[1] + (g.w[1] - g.v[1]) * f]);
+      }
+      return out;
+    };
+    const diamond = poly([[h, 1], [S - 1, h], [h, S - 1], [1, h]]);
+    const tri = poly([[h, 1], [S - 1, S * 0.87], [1, S * 0.87]]);
+    const F = [circle, diamond, tri];
+    const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    let on = true, t0 = performance.now(), paused = 0, pausedAt = 0;
+    if (hasIO) { this.ioMorph = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting && !on) { paused += performance.now() - pausedAt; } if (!e.isIntersecting && on) pausedAt = performance.now(); on = e.isIntersecting; })); this.ioMorph.observe(p.ownerSVGElement || p); }
+    const tick = (now) => {
+      if (on) {
+        const t = ((now - t0 - paused) / 4000) % 3, k = Math.floor(t), f = ease(Math.min(1, (t - k) / 0.6));
+        const A = F[k], Bp = F[(k + 1) % 3];
+        p.setAttribute('d', 'M' + A.map((a, i) => (a[0] + (Bp[i][0] - a[0]) * f).toFixed(1) + ' ' + (a[1] + (Bp[i][1] - a[1]) * f).toFixed(1)).join(' L') + 'Z');
+      }
+      this.rafMo = requestAnimationFrame(tick);
+    };
+    this.rafMo = requestAnimationFrame(tick);
+  }
+
+  // "Read more" shows only where text is actually cut off.
+  initClamp(root) {
+    const els = root ? Array.from(root.querySelectorAll('[data-clamp]')) : [];
+    const check = (el) => { const box = el.closest('[data-clampbox]'); if (box) box.classList.toggle('trunc', el.scrollHeight > el.clientHeight + 2); };
+    if ('ResizeObserver' in window) { this.ro = new ResizeObserver((es) => es.forEach((e) => check(e.target))); els.forEach((el) => this.ro.observe(el)); }
+    else els.forEach(check);
+  }
+  flip(container, mutate) {
+    if (!container || this.reduce || !container.animate) { mutate(); return; }
+    const first = {};
+    Array.from(container.querySelectorAll('[data-k]')).forEach((el) => { if (el.offsetParent) first[el.dataset.k] = el.getBoundingClientRect(); });
+    mutate();
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      let n = 0;
+      Array.from(container.querySelectorAll('[data-k]')).forEach((el) => {
+        if (!el.offsetParent) return;
+        const f = first[el.dataset.k], l = el.getBoundingClientRect();
+        if (f) {
+          const dx = f.left - l.left, dy = f.top - l.top;
+          if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+          el.animate([{ transform: 'translate(' + dx + 'px,' + dy + 'px)' }, { transform: 'none' }], { duration: 450, easing: 'cubic-bezier(.77,0,.175,1)' });
+        } else if (el.classList.contains('in')) {
+          el.animate([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 400, delay: n++ * 40, easing: 'cubic-bezier(.23,1,.32,1)', fill: 'backwards' });
+        }
+      });
+    }));
+  }
+
+  update() {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    const vh = window.innerHeight, docH = document.documentElement.scrollHeight, now = performance.now();
+    if (this.els.prog) this.els.prog.style.transform = 'scaleX(' + (docH > vh ? Math.min(1, y / (docH - vh)) : 0).toFixed(4) + ')';
+    const nav = this.els.nav;
+    if (nav) {
+      nav.classList.toggle('scr', y > 8);
+      if (window.innerWidth < 768 || y < 80) nav.classList.remove('hide');
+      else if (y > this.lastY + 4) nav.classList.add('hide');
+      else if (y < this.lastY - 4) nav.classList.remove('hide');
+    }
+    const dt = Math.max(16, now - this.lastT), v = (y - this.lastY) / dt;
+    if (Math.abs(v) < 20) this.velT = Math.max(-8, Math.min(8, v * 3));
+    this.lastT = now;
+    if (!this.reduce && this.shapes) {
+      this.shapes.forEach((s) => {
+        if (!s._vis || !s.parentElement) return;
+        const b = s.parentElement.getBoundingClientRect();
+        s._p = Math.max(0, Math.min(1, (vh - b.top) / (vh + b.height)));
+        s._py = s._p * (+s.dataset.py || 0);
+      });
+    }
+    if (this.els.bar) {
+      const vis = (el) => { if (!el) return false; const b = el.getBoundingClientRect(); return b.top < vh && b.bottom > 0; };
+      this.els.bar.classList.toggle('show', y > vh * 0.8 && !vis(this.els.join) && !vis(this.els.foot));
+    }
+    if (this.pageUpdate) this.pageUpdate(y, vh);
+    this.lastY = y;
+  }
+  componentDidMount() {
+    const mm = (q) => (window.matchMedia ? window.matchMedia(q).matches : false);
+    const reduce = mm('(prefers-reduced-motion: reduce)');
+    this.reduce = reduce;
+    const hasIO = 'IntersectionObserver' in window;
+    const root = this.els.root;
+    if (root) root.classList.add('js');
+    this.jsOn = true;
+    this.initShapes(root, hasIO);
+    this.initMorph(root, hasIO);
+    this.measure = () => { if (this.pageMeasure) this.pageMeasure(); this.update(); };
+    if (this.pageMount) this.pageMount(root, hasIO, reduce);
+    this.initClamp(root);
+    this.measure();
+    window.addEventListener('resize', this.measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(this.measure);
+    this.onScroll = () => {
+      if (this.ticking) return;
+      this.ticking = true;
+      requestAnimationFrame(() => { this.ticking = false; this.update(); });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    const rv = root ? Array.from(root.querySelectorAll('[data-rv]')) : [];
+    const stg = root ? Array.from(root.querySelectorAll('[data-stg]')) : [];
+    if (reduce || !hasIO) { rv.forEach((e) => e.classList.add('in')); stg.forEach((e) => e.classList.add('in')); }
+    else {
+      this.io = new IntersectionObserver((es) => { this.ioSeen = true; es.forEach((e) => { if (e.isIntersecting) { (e.target._rvc || [e.target]).forEach((x) => x.classList.add('in')); this.io.unobserve(e.target); } }); }, { threshold: 0.15 });
+      rv.forEach((e) => { if (e.classList.contains('rvc') && e.parentElement) { const pa = e.parentElement; pa._rvc = (pa._rvc || []).concat([e]); this.io.observe(pa); } else this.io.observe(e); });
+      this.ioStg = new IntersectionObserver((es) => {
+        let i = 0;
+        es.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target;
+          el.style.transitionDelay = (i++ * (+el.dataset.stg > 1 ? +el.dataset.stg : 40)) + 'ms';
+          el.classList.add('in');
+          this.ioStg.unobserve(el);
+          setTimeout(() => { el.style.transitionDelay = ''; }, 1000);
+        });
+      }, { threshold: 0.1 });
+      stg.forEach((e) => this.ioStg.observe(e));
+      // Safety net (e.g. a downloaded copy where observers never report): show everything rather than leave it hidden.
+      this.revealTimer = setTimeout(() => {
+        if (this.ioSeen) return;
+        rv.forEach((e) => e.classList.add('in')); stg.forEach((e) => e.classList.add('in'));
+        (this.shapes || []).forEach((sh) => sh.classList.add('drawn'));
+      }, 1500);
+    }
+    this.onKey = (e) => {
+      const box = this.state.menuOpen ? this.els.menuBox : (this.state.applyOpen ? this.els.applyBox : (this.state.sheet ? this.els.sheet : null));
+      if (!box) return;
+      if (e.key === 'Escape') { e.preventDefault(); if (this.state.menuOpen) this.closeMenu(); else if (this.state.applyOpen) this.closeApply(); else this.closeSheet(); return; }
+      if (e.key === 'Tab') {
+        const f = Array.from(box.querySelectorAll('input,select,button,a[href]')).filter((x) => !x.disabled && x.offsetParent !== null);
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1], a = document.activeElement;
+        if (!box.contains(a)) { e.preventDefault(); first.focus(); }
+        else if (e.shiftKey && a === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+      }
+    };
+    document.addEventListener('keydown', this.onKey);
+    if (mm('(hover: hover) and (pointer: fine)') && this.els.cursor) {
+      this.setState({ cursorOn: true });
+      const el = this.els.cursor;
+      let x = 0, y = 0, tx = 0, ty = 0, started = false;
+      this.onMove = (e) => {
+        tx = e.clientX; ty = e.clientY;
+        if (!started) { started = true; x = tx; y = ty; }
+        const t = e.target && e.target.closest ? e.target : null;
+        let mode = '', tone = '', label = '';
+        if (t) {
+          const lab = t.closest('[data-cur]');
+          if (t.closest('input,textarea,select')) mode = 'hide';
+          else if (lab) { mode = 'label'; label = lab.dataset.cur; }
+          else if (t.closest('a,button,[role="button"]')) mode = 'ring';
+          if (t.closest('[data-cursor="dark"],.light,[aria-pressed="true"],[aria-selected="true"],.mbar')) tone = 'n';
+        }
+        el.classList.toggle('on', mode !== 'hide');
+        if (el.dataset.mode !== mode) el.dataset.mode = mode;
+        if (el.dataset.tone !== tone) el.dataset.tone = tone;
+        if (el.dataset.label !== label) el.dataset.label = label;
+        if (reduce) el.style.transform = 'translate(' + tx + 'px,' + ty + 'px)';
+      };
+      this.onOut = (e) => { if (!e.relatedTarget) el.classList.remove('on'); };
+      this.onBlur = () => el.classList.remove('on');
+      window.addEventListener('pointermove', this.onMove, { passive: true });
+      document.addEventListener('mouseout', this.onOut);
+      window.addEventListener('blur', this.onBlur);
+      if (!reduce) {
+        const tick = () => { x += (tx - x) * 0.22; y += (ty - y) * 0.22; el.style.transform = 'translate(' + x + 'px,' + y + 'px)'; this.raf = requestAnimationFrame(tick); };
+        this.raf = requestAnimationFrame(tick);
+      }
+    }
+  }
+  componentWillUnmount() {
+    ['io', 'ioNum', 'ioStg', 'ioSh', 'ioVis', 'ioMorph', 'ioDf', 'ioDfPre', 'ro'].forEach((k) => { if (this[k]) this[k].disconnect(); });
+    if (this.measure) window.removeEventListener('resize', this.measure);
+    if (this.onScroll) window.removeEventListener('scroll', this.onScroll);
+    if (this.onKey) document.removeEventListener('keydown', this.onKey);
+    if (this.onMove) window.removeEventListener('pointermove', this.onMove);
+    if (this.onPtr) window.removeEventListener('pointermove', this.onPtr);
+    if (this.onOut) document.removeEventListener('mouseout', this.onOut);
+    if (this.onBlur) window.removeEventListener('blur', this.onBlur);
+    ['raf', 'rafSh', 'rafMo'].forEach((k) => { if (this[k]) cancelAnimationFrame(this[k]); });
+    if (this.shTimer) clearTimeout(this.shTimer);
+    if (this.stTimer) clearInterval(this.stTimer);
+    if (this.pageUnmount) this.pageUnmount();
+  }
+  commonVals() {
+    const s = this.state;
+    const v = {
+      curCls: (s.cursorOn ? 'curon' : '') + (this.jsOn ? ' js' : ''),
+      menuOpen: s.menuOpen, menuExp: s.menuOpen ? 'true' : 'false', openMenu: this.openMenu, closeMenu: this.closeMenu, setMenuX: this.setMenuX,
+      sheetOpen: !!s.sheet, sheetLabel: 'sb-' + s.sheet, closeSheet: this.closeSheet, setSheetX: this.setSheetX,
+      markLetters: Array.from('AI Business Group').map((c, i) => ({ c: c === ' ' ? '\u00a0' : c, d: i * 30 }))
+    };
+    this.refList.forEach((k) => { v['set' + k] = this['set' + k]; });
+    return v;
+  }
+  renderVals() { const sv = this.statusVals(); this.sv = sv; return Object.assign(this.commonVals(), sv.vals, this.pageVals ? this.pageVals() : {}); }
+
+  // ---------------------------------------------------------------------------
+  // Live status: content.json "status". The preview panel overrides the states.
+  // PROTOTYPE = true shows the panel on the canvas; set it to false to ship,
+  // and the panel then only appears with ?preview in the URL.
+  // ---------------------------------------------------------------------------
+  status() { return {"recruitment": {"state": "closed", "opensAt": "2027-01-12T09:00:00-05:00", "closesAt": "2027-01-30T23:59:00-05:00", "applyUrl": "/portal/", "infoSessions": [{"date": "Thu, Jan 14 · 7:00 PM", "location": "Ross School of Business"}, {"date": "Tue, Jan 19 · 7:00 PM", "location": "Ross School of Business"}], "cycle": "Winter 2027", "timeline": [{"k": "info", "label": "Info sessions", "date": "Jan 14 and 19", "start": "2027-01-14T19:00:00-05:00", "end": "2027-01-19T20:00:00-05:00"}, {"k": "chats", "label": "Coffee chats", "date": "Jan 20 to 29", "start": "2027-01-20T09:00:00-05:00", "end": "2027-01-29T18:00:00-05:00", "optional": true}, {"k": "due", "label": "Application due", "date": "Jan 30", "start": "2027-01-30T23:59:00-05:00", "end": "2027-01-30T23:59:00-05:00"}, {"k": "r1", "label": "Round 1 interviews", "date": "Feb 4 to 6", "start": "2027-02-04T09:00:00-05:00", "end": "2027-02-06T18:00:00-05:00"}, {"k": "r2", "label": "Round 2 interviews", "date": "Feb 10 and 11", "start": "2027-02-10T09:00:00-05:00", "end": "2027-02-11T18:00:00-05:00"}, {"k": "dec", "label": "Decisions", "date": "Feb 14", "start": "2027-02-14T12:00:00-05:00", "end": "2027-02-14T12:00:00-05:00"}], "tracks": [{"key": "business", "label": "Business", "line": "Scope the problem with the partner, size the opportunity and present the recommendation.", "example": "Competitor Feature Tracker, for Clerked"}, {"key": "engineering", "label": "Engineering", "line": "Build the model, the data pipeline and the prototype the partner actually uses.", "example": "AI-Powered Funding Chatbot, for Hitachi Digital Services"}, {"key": "ai_investment_fund", "label": "AI Investment Fund", "line": "Research and run AI-driven investment ideas, from thesis to backtest.", "example": "Prediction Market Signal Analysis, for a financial research firm", "subtracks": [{"key": "strategy", "label": "Strategy"}, {"key": "quant", "label": "Quant"}]}]}, "conference": {"state": "save-the-date", "name": "Michigan AI Business Conference 2027", "date": "October 2027", "location": "Stephen M. Ross School of Business", "ticketsUrl": "#", "price": "TBD"}, "event": {"show": true, "title": "Endpoint Presentations", "summary": "Project teams present what they built, tested and learned this semester.", "date": "2026-12-05T14:30:00-05:00", "location": "Ross School of Business", "note": "RSVP required", "cta": "RSVP", "url": "/events/endpoint-presentations/"}}; }
+  statusInit() {
+    const PROTOTYPE = false;
+    let q = false;
+    try { q = /[?&]preview\b/.test(window.location.search); } catch (e) {}
+    this.pvAllowed = PROTOTYPE || q;
+    const S = this.status();
+    let st = { r: S.recruitment.state, c: S.conference.state, ev: !!(S.event && S.event.show), tp: 'early', a: 'interview_round1' };
+    try { const saved = JSON.parse(sessionStorage.getItem('aibgPreview') || 'null'); if (saved && this.pvAllowed) st = Object.assign(st, saved); } catch (e) {}
+    let dis = [];
+    try { dis = JSON.parse(localStorage.getItem('aibgBarDismissed') || '[]') || []; } catch (e) {}
+    this._rt = {};
+    return { st, dismissed: dis, applyOpen: false, pvOpen: false, nfMsg: '', now: Date.now() };
+  }
+  statusWire() {
+    const save = (st) => { try { sessionStorage.setItem('aibgPreview', JSON.stringify(st)); } catch (e) {} };
+    const setSt = (o) => { const st = Object.assign({}, this.state.st, o); this.setState({ st }); save(st); };
+    this.R_STATES = [['closed', 'Closed'], ['opening-soon', 'Opening soon'], ['open', 'Open'], ['closing-soon', 'Closing soon']];
+    this.C_STATES = [['off', 'Off'], ['save-the-date', 'Save the date'], ['tickets', 'Tickets on sale'], ['sold-out', 'Sold out'], ['live', 'Conference today'], ['past', 'Past']];
+    this.pvRGo = this.R_STATES.map(([v]) => () => setSt({ r: v }));
+    this.pvCGo = this.C_STATES.map(([v]) => () => setSt({ c: v }));
+    this.pvEvToggle = () => setSt({ ev: !this.state.st.ev });
+    this.setStatus = setSt;
+    this.TP_STATES = [['early', 'Early bird'], ['general', 'General sale']];
+    this.A_STATES = [['not_started', 'Not started'], ['draft', 'Draft'], ['submitted', 'Submitted'], ['interview_round1', 'Round 1'], ['interview_round2', 'Round 2'], ['accepted', 'Accepted'], ['rejected', 'Rejected'], ['withdrawn', 'Withdrawn']];
+    this.pvTpGo = this.TP_STATES.map(([v]) => () => setSt({ tp: v }));
+    this.pvAGo = this.A_STATES.map(([v]) => () => { const was = this.state.st.a; setSt({ a: v }); if (this.onStage) this.onStage(v, was); });
+    this.pvToggle = () => this.setState({ pvOpen: !this.state.pvOpen });
+    this.openApply = (e) => { this.applyFrom = (e && e.currentTarget) || document.activeElement; this.setState({ applyOpen: true, nfMsg: '' }); };
+    this.openApplyM = () => { this.setState({ menuOpen: false, applyOpen: true, nfMsg: '' }); };
+    this.closeApply = () => { this.setState({ applyOpen: false }); this.refocus(this.applyFrom); };
+    this.dismissBar = () => {
+      const key = this.barKey;
+      if (!key) return;
+      const dis = this.state.dismissed.concat([key]);
+      try { localStorage.setItem('aibgBarDismissed', JSON.stringify(dis)); } catch (e) {}
+      this.setState({ dismissed: dis });
+    };
+    const sx = (key) => (el) => { this.els[key] = el; if (el) setTimeout(() => { try { el.focus(); } catch (e) {} }, 30); };
+    this.setApplyX = sx('applyX');
+    this.setNotify = (el) => {
+      this.els.notify = el;
+      if (el && !el._wired) {
+        el._wired = true;
+        el.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const inp = el.querySelector('input'), v = inp ? inp.value.trim() : '';
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { this.setState({ nfMsg: 'Enter an email address, like you@umich.edu.' }); if (inp) inp.focus(); return; }
+          // TODO: send to the recruitment mailing list.
+          inp.value = '';
+          this.setState({ nfMsg: 'Thanks. We’ll email ' + v + ' when applications open.' });
+        });
+      }
+    };
+    this.stTimer = setInterval(() => { const m = Math.floor(Date.now() / 60000); if (m !== this.lastStMin) { this.lastStMin = m; this.setState({ now: Date.now() }); } }, 1000);
+  }
+  roll(key, val) {
+    const r = this._rt[key];
+    if (!r) { this._rt[key] = { prev: val, cur: val, anim: '' }; return this._rt[key]; }
+    if (r.cur !== val) this._rt[key] = { prev: r.cur, cur: val, anim: r.anim === 'ra' ? 'rb' : 'ra' };
+    return this._rt[key];
+  }
+  // Effective "now" for recruitment: in preview, closing-soon pretends we are 2 days and 5 hours before closesAt.
+  recNow() {
+    const S = this.status().recruitment, st = this.state.st.r, close = new Date(S.closesAt).getTime(), now = this.state.now;
+    if (st === 'closing-soon' && !(close - now > 0 && close - now < 72 * 3600000)) return close - (2 * 86400000 + 5 * 3600000);
+    return now;
+  }
+  statusVals() {
+    const S = this.status(), st = this.state.st, R = S.recruitment, Cf = S.conference;
+    const fmt = (iso, o) => { try { return new Intl.DateTimeFormat('en-US', Object.assign({ timeZone: 'America/New_York' }, o)).format(new Date(iso)); } catch (e) { return ''; } };
+    const opens = fmt(R.opensAt, { month: 'short', day: 'numeric' }), closes = fmt(R.closesAt, { month: 'short', day: 'numeric' });
+    const left = Math.max(0, new Date(R.closesAt).getTime() - this.recNow());
+    const dl = Math.floor(left / 86400000);
+    const daysTxt = dl < 1 ? 'less than a day' : (dl === 1 ? '1 day' : dl + ' days');
+    const applyText = { 'closed': 'Apply', 'opening-soon': 'Apply · opens ' + opens, 'open': 'Apply now', 'closing-soon': 'Apply · closes in ' + daysTxt }[st.r] || 'Apply';
+    // Announcement bar: the single most urgent item.
+    const items = [];
+    if (st.r === 'closing-soon') items.push({ key: 'r-closing', text: 'Project team applications close in ' + daysTxt + '.', link: 'Apply now', isApply: true });
+    if (st.r === 'open') items.push({ key: 'r-open', text: 'Project team applications are open until ' + closes + '.', link: 'Apply now', isApply: true });
+    if (st.c === 'tickets') items.push({ key: 'c-tickets', text: 'Tickets are on sale for the ' + Cf.name + '.', link: 'Get tickets', href: '/conference/' });
+    if (st.c === 'live') items.push({ key: 'c-live', text: 'The Michigan AI Business Conference is happening today at Ross.', link: 'See the schedule', href: '/conference/' });
+    if (st.r === 'opening-soon') items.push({ key: 'r-soon', text: 'Project team applications open ' + opens + '.', link: 'Get notified', isApply: true });
+    if (st.c === 'save-the-date') items.push({ key: 'c-std', text: 'Save the date: the ' + Cf.name + ', ' + Cf.date + ' at Ross.', link: 'Learn more', href: '/conference/' });
+    const top = items.find((x) => this.state.dismissed.indexOf(x.key) < 0) || null;
+    this.barKey = top ? top.key : '';
+    const bar = top ? { on: true, link: top.link, isApply: !!top.isApply, isLink: !top.isApply, href: top.href || '#' } : { on: false, link: '', isApply: false, isLink: false, href: '#' };
+    // Apply sheet
+    const hh = Math.floor((left % 86400000) / 3600000), mm = Math.floor((left % 3600000) / 60000);
+    const ap = {
+      'closed': { title: 'Applications are closed', body: 'The next round opens in January. Leave your email and we’ll tell you the day it opens.', notify: true },
+      'opening-soon': { title: 'Applications open ' + opens, body: 'Applications open ' + opens + ' and close ' + closes + '. Come to an info session first, or leave your email and we’ll remind you.', notify: true, sessions: true },
+      'open': { title: 'Applications are open', body: 'Apply by ' + closes + '. Coffee chats are optional.', canApply: true, sessions: true },
+      'closing-soon': { title: 'Applications close soon', body: 'The deadline is ' + closes + ' at 11:59 PM ET.', canApply: true, countdown: true }
+    }[st.r] || {};
+    ap.url = R.applyUrl; ap.infoSessions = R.infoSessions;
+    ap.d = String(Math.floor(left / 86400000)); ap.h = (hh < 10 ? '0' : '') + hh; ap.m = (mm < 10 ? '0' : '') + mm;
+    ap.cdLabel = 'Closes in ' + ap.d + ' days, ' + hh + ' hours and ' + mm + ' minutes';
+    ['notify', 'sessions', 'canApply', 'countdown'].forEach((k) => { ap[k] = !!ap[k]; });
+    return {
+      st, opens, closes, daysTxt, R, Cf,
+      vals: {
+        applyLabel: this.roll('applyLabel', applyText), barText: this.roll('barText', top ? top.text : ''), bar,
+        barCls: top ? 'has-bar' : '', confNav: ['tickets', 'sold-out', 'live', 'past'].indexOf(st.c) >= 0,
+        openApply: this.openApply, openApplyM: this.openApplyM, closeApply: this.closeApply, dismissBar: this.dismissBar,
+        applyOpen: this.state.applyOpen, ap, nfMsg: this.state.nfMsg, setApplyX: this.setApplyX, setNotify: this.setNotify,
+        pvOn: this.pvAllowed, pvOpen: this.state.pvOpen, pvExp: this.state.pvOpen ? 'true' : 'false', pvToggle: this.pvToggle,
+        pvR: this.R_STATES.map(([v, l], i) => ({ label: l, on: st.r === v ? 'true' : 'false', go: this.pvRGo[i] })),
+        pvC: this.C_STATES.map(([v, l], i) => ({ label: l, on: st.c === v ? 'true' : 'false', go: this.pvCGo[i] })),
+        pvEvOn: st.ev ? 'true' : 'false', pvEvLabel: st.ev ? 'On' : 'Off', pvEvToggle: this.pvEvToggle,
+        pvTpOn: st.c === 'tickets', pvTp: this.TP_STATES.map(([v, l], i) => ({ label: l, on: st.tp === v ? 'true' : 'false', go: this.pvTpGo[i] })),
+        pvAOn: !!this.pvApp, pvA: this.A_STATES.map(([v, l], i) => ({ label: l, on: st.a === v ? 'true' : 'false', go: this.pvAGo[i] }))
+      }
+    };
+  }
+
+  // ---------------------------------------------------------------------------
+  // Round 11 helpers
+  // ---------------------------------------------------------------------------
+  // Effective "now" for the recruitment cycle. Preview states pretend a date inside the cycle.
+  recTime() {
+    const R = this.status().recruitment, st = this.state.st.r, now = this.state.now;
+    const open = new Date(R.opensAt).getTime(), close = new Date(R.closesAt).getTime();
+    if (st === 'closing-soon') return this.recNow();
+    if (st === 'open') return (now >= open && now < close) ? now : new Date('2027-01-21T12:00:00-05:00').getTime();
+    if (st === 'opening-soon') return Math.min(now, open - 3 * 86400000);
+    return now;
+  }
+  // Timeline steps with past / next / future from a time.
+  timeline(t) {
+    let nextSet = false;
+    return this.status().recruitment.timeline.map((s, i) => {
+      const end = new Date(s.end).getTime();
+      let st = 'future';
+      if (t > end) st = 'past'; else if (!nextSet) { st = 'next'; nextSet = true; }
+      return Object.assign({}, s, { i, st });
+    });
+  }
+  // Text decodes from random characters into the real text, left to right. The element must have no
+  // template children (the runtime never owns its text), and carries the real text in aria-label.
+  decodeText(el, text, ms) {
+    if (!el) return;
+    if (el._dec) { cancelAnimationFrame(el._dec); el._dec = null; }
+    if (this.reduce) { el.textContent = text; return; }
+    const A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', dur = ms || 350, t0 = performance.now();
+    const tick = (now) => {
+      const p = Math.min(1, (now - t0) / dur), n = Math.floor(p * text.length);
+      let s = text.slice(0, n);
+      for (let i = n; i < text.length; i++) s += /\s|[·,.:'’-]/.test(text[i]) ? text[i] : A[Math.floor(Math.random() * A.length)];
+      el.textContent = s;
+      el._dec = p < 1 ? requestAnimationFrame(tick) : null;
+    };
+    el._dec = requestAnimationFrame(tick);
+  }
+  // Add to calendar: builds a real .ics file and downloads it.
+  icsDownload(ev) {
+    const z = (d) => new Date(d).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+    const esc = (s) => String(s || '').replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/([,;])/g, '\\$1');
+    const body = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//AI Business Group//abgumich.org//EN', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT',
+      'UID:' + (ev.uid || ('aibg-' + z(ev.start))) + '@abgumich.org', 'DTSTAMP:' + z(Date.now()), 'DTSTART:' + z(ev.start), 'DTEND:' + z(ev.end || ev.start),
+      'SUMMARY:' + esc(ev.title), 'LOCATION:' + esc(ev.location), 'DESCRIPTION:' + esc(ev.desc), 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+    try {
+      const url = URL.createObjectURL(new Blob([body], { type: 'text/calendar;charset=utf-8' }));
+      const a = document.createElement('a'); a.href = url; a.download = (ev.file || 'aibg-event') + '.ics';
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
+    } catch (e) {}
+  }
+  // Width FLIP: measure, change, measure, animate the width between the two (350ms).
+  morphW(el, mutate) {
+    if (!el || this.reduce || !el.animate) { mutate(() => {}); return; }
+    const w0 = el.getBoundingClientRect().width;
+    mutate(() => {
+      const w1 = el.getBoundingClientRect().width;
+      if (Math.abs(w1 - w0) > 1) el.animate([{ width: w0 + 'px' }, { width: w1 + 'px' }], { duration: 350, easing: 'cubic-bezier(.77,0,.175,1)' });
+    });
+  }
+  // RSVP: one button that morphs RSVP -> spinner dot -> Going (check). Remembered in this browser.
+  rsvpInit(keys) {
+    let g = [];
+    try { g = JSON.parse(localStorage.getItem('aibgRsvp') || '[]') || []; } catch (e) {}
+    const r = {};
+    keys.forEach((k) => { r[k] = g.indexOf(k) >= 0 ? 'going' : 'idle'; });
+    return r;
+  }
+  rsvpVals(k, title) {
+    if (!this._rsvpGo) this._rsvpGo = {};
+    if (!this._rsvpGo[k]) this._rsvpGo[k] = (e) => {
+      const el = e && e.currentTarget, cur = this.state.rsvp[k];
+      if (cur === 'busy') return;
+      const set = (v, cb) => this.setState({ rsvp: Object.assign({}, this.state.rsvp, { [k]: v }) }, cb);
+      const save = () => { try { localStorage.setItem('aibgRsvp', JSON.stringify(Object.keys(this.state.rsvp).filter((x) => this.state.rsvp[x] === 'going'))); } catch (e2) {} };
+      if (cur === 'going') { this.morphW(el, (done) => set('idle', () => { done(); save(); })); return; }
+      this.morphW(el, (done) => set('busy', done));
+      // Backend: POST the RSVP to the events API (the real site already has RSVPs and check-in).
+      setTimeout(() => this.morphW(el, (done) => set('going', () => { done(); save(); })), 700);
+    };
+    const v = (this.state.rsvp || {})[k] || 'idle';
+    return { go: this._rsvpGo[k], idle: v === 'idle', busy: v === 'busy', going: v === 'going', cls: 'rs-' + v, pressed: v === 'going' ? 'true' : 'false',
+      aria: v === 'going' ? 'Going to ' + title + '. Press to cancel your RSVP.' : 'RSVP to ' + title };
+  }
+  // Slot picker: days as tabs, times as pills; choosing a time slides a confirm bar up.
+  slotVals(key, days, confirmLabel, onConfirm) {
+    const S = (this.state.slots || {})[key] || { day: 0, time: '', booked: '' };
+    const set = (o, cb) => this.setState({ slots: Object.assign({}, this.state.slots, { [key]: Object.assign({}, S, o) }) }, cb);
+    if (!this._slot) this._slot = {};
+    const h = this._slot[key] || (this._slot[key] = { day: {}, time: {} });
+    const d = days[S.day] || days[0];
+    const out = {
+      days: days.map((x, i) => ({ dow: x.dow, day: x.day, sel: i === S.day ? 'true' : 'false', go: h.day[i] || (h.day[i] = () => set({ day: i, time: '' })) })),
+      times: d.times.map((t) => ({ label: t, sel: S.time === t ? 'true' : 'false', go: h.time[d.day + t] || (h.time[d.day + t] = () => set({ time: S.time === t ? '' : t })) })),
+      barCls: S.time && !S.booked ? 'up' : '', barText: S.time ? d.dow + ', ' + d.day + ' · ' + S.time : '',
+      booked: !!S.booked, picking: !S.booked, bookedText: S.booked, confirmLabel,
+      confirm: h.confirm || (h.confirm = () => { const cur = (this.state.slots || {})[key] || S, dd = days[cur.day] || days[0]; const txt = dd.dow + ', ' + dd.day + ' · ' + cur.time; this.setState({ slots: Object.assign({}, this.state.slots, { [key]: Object.assign({}, cur, { booked: txt }) }) }); if (onConfirm) onConfirm(dd, cur.time); }),
+      change: h.change || (h.change = () => { const cur = (this.state.slots || {})[key] || S; this.setState({ slots: Object.assign({}, this.state.slots, { [key]: Object.assign({}, cur, { booked: '', time: '' }) }) }); }),
+      ics: h.ics || (h.ics = () => { const cur = (this.state.slots || {})[key] || S, dd = days[cur.day] || days[0]; if (!cur.time) return; const st = this.slotDate(dd.iso, cur.time); this.icsDownload({ uid: key + '-' + st.getTime(), title: confirmLabel === 'Book interview' ? 'AIBG interview' : 'AIBG coffee chat', start: st, end: new Date(st.getTime() + 30 * 60000), location: 'Ross School of Business', desc: 'AI Business Group', file: 'aibg-' + key }); })
+    };
+    return out;
+  }
+  slotDate(iso, time) {
+    const m = time.match(/(\d+):(\d+)\s*(AM|PM)/i) || [];
+    let h = Number(m[1]) % 12; if ((m[3] || '').toUpperCase() === 'PM') h += 12;
+    return new Date(iso + 'T' + String(h).padStart(2, '0') + ':' + m[2] + ':00-05:00');
+  }
+
+  accVals(key, n) {
+    if (!this._acc) this._acc = {};
+    const o = {}, open = (this.state.acc || {})[key];
+    for (let i = 0; i < n; i++) {
+      const on = open === i;
+      o['c' + i] = on ? 'open' : '';
+      o['e' + i] = on ? 'true' : 'false';
+      o['t' + i] = this._acc[key + i] || (this._acc[key + i] = () => { const cur = (this.state.acc || {})[key]; this.setState({ acc: Object.assign({}, this.state.acc, { [key]: cur === i ? -1 : i }) }); });
+    }
+    return o;
+  }
+
+
+  initState() { let t = ''; try { t = sessionStorage.getItem('aibgTrack') || ''; } catch (e) {} return { track: t, rsvp: this.rsvpInit(["endpoint", "info1", "info2"]), slots: {}, acc: {} }; }
+  pageInit() {
+    this.CHAT = [{"dow": "Wed", "day": "Jan 20", "iso": "2027-01-20", "times": ["10:00 AM", "11:30 AM", "1:00 PM", "3:30 PM", "5:00 PM"]}, {"dow": "Thu", "day": "Jan 21", "iso": "2027-01-21", "times": ["9:30 AM", "12:00 PM", "2:00 PM", "4:30 PM"]}, {"dow": "Mon", "day": "Jan 25", "iso": "2027-01-25", "times": ["10:00 AM", "1:30 PM", "3:00 PM", "6:00 PM"]}, {"dow": "Tue", "day": "Jan 26", "iso": "2027-01-26", "times": ["11:00 AM", "12:30 PM", "2:30 PM", "4:00 PM", "5:30 PM"]}, {"dow": "Thu", "day": "Jan 28", "iso": "2027-01-28", "times": ["10:30 AM", "1:00 PM", "3:30 PM"]}];
+    this.EV = [{"k": "endpoint", "title": "Endpoint Presentations"}, {"k": "info1", "title": "Recruitment info session"}, {"k": "info2", "title": "Recruitment info session"}];
+    this.evOpen = {};
+    this.EV.forEach((e) => { this.evOpen[e.k] = () => { try { sessionStorage.setItem('aibgEv', e.k); } catch (x) {} }; });
+    const pick = (k) => () => { const t = this.state.track === k ? '' : k; this.setState({ track: t }); try { sessionStorage.setItem('aibgTrack', t); } catch (e) {} };
+    this.TRK = this.status().recruitment.tracks;
+    this.pickTrack = {};
+    this.TRK.forEach((t) => { this.pickTrack[t.key] = pick(t.key); });
+    this.goPortal = () => { try { sessionStorage.setItem('aibgTrack', this.state.track || ''); } catch (e) {} };
+  }
+  pageVals() {
+    const ST = this.sv, st = ST.st, R = ST.R, ap = ST.vals.ap;
+    const t = this.recTime(), steps = this.timeline(t), tl = {};
+    steps.forEach((s, i) => { tl['s' + i] = s.st; tl['sr' + i] = (s.st === 'past' ? 'Done' : (s.st === 'next' ? 'Next' : 'Coming up')) + (s.optional ? ', optional' : ''); });
+    const ni = steps.findIndex((s) => s.st === 'next'), tlFill = (ni < 0 ? 1 : ni / (steps.length - 1)).toFixed(3);
+    const chip = {
+      'closed': { text: 'Applications closed · ' + R.cycle + ' opens ' + ST.opens, cls: '' },
+      'opening-soon': { text: 'Opens ' + ST.opens + ' · closes ' + ST.closes, cls: '' },
+      'open': { text: 'Open now · closes ' + ST.closes, cls: 'on' },
+      'closing-soon': { text: 'Closes in ' + ST.daysTxt, cls: 'on', countdown: true }
+    }[st.r];
+    const canApply = st.r === 'open' || st.r === 'closing-soon';
+    const tk = this.state.track, trk = {}, trkP = {}, trkTag = {};
+    this.TRK.forEach((t) => { const k = t.key; trk[k] = tk === k ? 'on' : ''; trkP[k] = tk === k ? 'true' : 'false'; trkTag[k] = tk === k ? 'Your track' : 'Track'; });
+    if (!tk && this.TRK.length) trk[this.TRK[0].key] = 'on';
+    const evv = {};
+    this.EV.forEach((e) => { evv[e.k] = { cls: '', open: this.evOpen[e.k], rv: this.rsvpVals(e.k, e.title) }; });
+    const tname = (this.TRK.find((t) => t.key === tk) || {}).label || '';
+    return {
+      cycle: R.cycle, rchipText: this.roll('rchipText', chip.text), rchip: { cls: chip.cls, countdown: !!chip.countdown }, ap,
+      trk, trkP, trkTag, pickTrack: this.pickTrack, tl, tlFill,
+      tlNote: { 'closed': 'Dates for ' + R.cycle + '. Some are still to be confirmed.', 'opening-soon': 'Applications open ' + ST.opens + '.', 'open': 'Applications are open until ' + ST.closes + '.', 'closing-soon': 'Applications close ' + ST.closes + ' at 11:59 PM ET.' }[st.r],
+      evv, chat: this.slotVals('chat', this.CHAT, 'Book this time'), fq: this.accVals('fq', 5),
+      cta: {
+        title: canApply ? 'Start your application' : 'Applications open ' + ST.opens,
+        body: canApply ? (tname ? 'You picked the ' + tname + ' track. ' : '') + 'It takes about 20 minutes and saves as you go. Due ' + ST.closes + ' at 11:59 PM ET.' : 'You can start a draft in the portal now and submit once applications open.'
+      },
+      goPortal: this.goPortal
+    };
+  }
+
+}
+</script>
+
+
+</body></html>
